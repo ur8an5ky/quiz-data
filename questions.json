@@ -202,36 +202,31 @@
     "explanation": "W kolejkach komunikatów System V ({msgsnd}, {msgrcv}) komunikat jest strukturą. System operacyjny wymaga, aby pierwszym elementem tej struktury był {long mtype} (typ komunikatu), który służy do filtrowania wiadomości. Reszta struktury zależy od programisty."
   },
   {
-    "id": 6,
-    "question": "Komunikatem w systemie UNIX (kolejki komunikatów System V) może być:",
+    "id": 7,
+    "question": "Operacja usunięcia segmentu pamięci współdzielonej:",
     "options": [
       {
-        "text": "dowolna struktura danych, przy czym pierwsza zmienna w strukturze musi być typu `long`",
-        "inline_explanation": "(ten typ `long mtype` służy do identyfikacji i filtrowania komunikatów przy odbiorze)",
+        "text": "może być wykonana tylko przez proces posiadający odpowiednie prawa dostępu lub przez administratora",
+        "inline_explanation": "(Wymagane uprawnienia właściciela, twórcy lub roota)",
         "correct": true
       },
       {
-        "text": "struktura zdefiniowana przez użytkownika, rozpoczynająca się od pola `long mtype`, po którym następują dowolne dane",
-        "inline_explanation": "(to definicja zgodna ze standardem funkcji `msgsnd`)",
-        "correct": true
-      },
-      {
-        "text": "wyłącznie ciąg znaków (string) zakończony znakiem null",
-        "inline_explanation": "(kolejki mogą przesyłać dowolne dane binarne, nie tylko tekst)",
+        "text": "następuje automatycznie w momencie, gdy ostatni proces odłączy się od segmentu",
+        "inline_explanation": "(Nie w System V – tam segmenty są trwałe/persistent)",
         "correct": false
       },
       {
-        "text": "dowolna liczba całkowita typu `int` przesyłana przez potok",
-        "inline_explanation": "(potoki to strumienie bajtów, a nie kolejki komunikatów; kolejki wymagają struktury)",
+        "text": "może być wykonana przez dowolnego użytkownika systemu bez względu na uprawnienia",
+        "inline_explanation": "(Fałsz, systemy uniksowe wymagają odpowiednich uprawnień do zasobów IPC)",
         "correct": false
       },
       {
-        "text": "wskaźnik do pamięci współdzielonej, który musi być pierwszą zmienną",
-        "inline_explanation": "(pierwszą zmienną musi być typ wiadomości; przesyłanie samych wskaźników między procesami jest też błędem logicznym ze względu na różne przestrzenie adresowe)",
+        "text": "jest niemożliwa, pamięć współdzielona jest czyszczona tylko przy restarcie systemu",
+        "inline_explanation": "(Fałsz, można użyć polecenia ipcrm lub funkcji shmctl)",
         "correct": false
       }
     ],
-    "explanation": "W mechanizmie kolejek komunikatów System V (funkcje `msgsnd`, `msgrcv`) komunikat nie jest surowym strumieniem bajtów, lecz strukturą. System operacyjny narzuca jeden wymóg: pierwszym polem tej struktury musi być liczba całkowita typu `long` (często nazywana `mtype`). Służy ona do nadawania priorytetów lub typów wiadomościom, co pozwala na ich wybiórcze odbieranie (np. 'odbierz tylko komunikaty typu 1'). Pozostała część struktury jest całkowicie dowolna i zależy od definicji programisty."
+    "explanation": "Pamięć współdzielona w standardzie System V jest zasobem trwałym (persistent) – nie znika sama po zakończeniu procesów. Musi zostać jawnie usunięta (np. poleceniem ipcrm lub funkcją shmctl). Może to zrobić tylko właściciel segmentu, twórca lub root."
   },
   {
     "id": 8,
@@ -4541,4 +4536,5 @@
     ],
     "explanation": "Zombie Cookie to uporczywy element śledzący. Działa jak wirus: jeśli usuniesz plik cookies, skrypt na stronie sprawdzi, czy dane są w LocalStorage lub cache'u obrazka (ETag). Jeśli znajdzie kopię, natychmiast odtwarza usunięte ciasteczko, \"ożywiając\" je jak zombie."
   }
+
 ]
