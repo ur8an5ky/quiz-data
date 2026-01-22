@@ -24,6 +24,11 @@
         "correct": false
       },
       {
+        "text": "dwunastkowy system liczbowy",
+        "inline_explanation": "",
+        "correct": false
+      },
+      {
         "text": "szesnastkowy system liczbowy",
         "inline_explanation": "",
         "correct": false
@@ -8631,4 +8636,5 @@
     ],
     "explanation": ""
   }
+
 ]
