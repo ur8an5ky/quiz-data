@@ -7606,10 +7606,7 @@
         "correct": false
       }
     ],
-    "explanation": "Model OSI (Open Systems Interconnection) składa się z 7 warstw: 1. Fizycznej, 2. Łącza Danych, 3. Sieci, 4. Transportowej, 5. Sesji, 6. Prezentacji, 7. Aplikacji.
-
-  [Image of OSI model layers]
-  "
+    "explanation": "Model OSI (Open Systems Interconnection) składa się z 7 warstw: 1. Fizycznej, 2. Łącza Danych, 3. Sieci, 4. Transportowej, 5. Sesji, 6. Prezentacji, 7. Aplikacji."
   },
   {
     "id": 268,
@@ -8433,4 +8430,5 @@
     ],
     "explanation": "Protokół IS-IS (używany często przez dostawców internetu) ma strukturę dwupoziomową. Level 1 routery znają trasy tylko w swoim obszarze. Level 2 routery tworzą szkielet (backbone) łączący obszary. Istnieją też routery L1/L2 pełniące funkcję bram."
   }
+
 ]
