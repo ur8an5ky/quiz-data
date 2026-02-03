@@ -27,6 +27,31 @@
         "text": "obsługę przekierowań strumieni wejścia/wyjścia oraz mechanizmu potoków (łączenie programów znakiem |)",
         "inline_explanation": "(to jedna z kluczowych funkcji powłoki, pozwalająca na tworzenie złożonych poleceń)",
         "correct": true
+      },
+      {
+        "text": "uruchamianie programów",
+        "inline_explanation": "(to Shell jest odpowiedzialny za znalezienie programu na dysku i zlecenie jego uruchomienia)",
+        "correct": true
+      },
+      {
+        "text": "obsługę skryptów",
+        "inline_explanation": "(możliwość automatyzacji zadań - język skryptowy powłoki)",
+        "correct": true
+      },
+      {
+        "text": "zarządzanie pamięcią RAM i przydział czasu procesora",
+        "inline_explanation": "(to zadanie Jądra/Schedulera)",
+        "correct": false
+      },
+      {
+        "text": "kompilacja kodu źródłowego",
+        "inline_explanation": "(shell nie jest kompilatorem, on tylko może uruchomić kompilator, np. `gcc`)",
+        "correct": false
+      },
+      {
+        "text": "zarządzanie systemem plików na poziomie fizycznym",
+        "inline_explanation": "(shell pozwala przeglądać pliki, ale to Jądro decyduje, jak są zapisywane na talerzach dysku)",
+        "correct": false
       }
     ],
     "explanation": "Powłoka (shell) to program systemowy, który pełni rolę pośrednika między użytkownikiem a jądrem systemu operacyjnego (kernelem). Jest to interpreter poleceń. Kiedy wpisujesz komendę w terminalu, shell ją analizuje (parsowanie) i decyduje, jak ją wykonać. Kluczowym rozróżnieniem jest tutaj podział na komendy wbudowane (built-in, np. cd, echo), które shell wykonuje sam, oraz zewnętrzne (programy w /bin), które uruchamia. Dodatkowo shell zarządza środowiskiem pracy (zmienne środowiskowe), obsługuje historię poleceń oraz pozwala na sterowanie przepływem danych między procesami (potoki i przekierowania). Nie zajmuje się jednak bezpośrednim zarządzaniem sprzętem (np. czasem procesora), co jest wyłącznym zadaniem jądra."
@@ -59,6 +84,16 @@
         "text": "zmieniać liczarność argumentów operatora (np. sprawić, by operator jednoargumentowy ! przyjmował dwa argumenty)",
         "inline_explanation": "(arność operatora jest stała - operator jednoargumentowy zawsze musi działać na jednym argumencie)",
         "correct": false
+      },
+      {
+        "text": "nadać nowe znaczenie operatorom w zależności od typów argumentów, na których działają",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "zwiększyć czytelność kodu poprzez użycie standardowej notacji matematycznej dla obiektów",
+        "inline_explanation": "()",
+        "correct": true
       }
     ],
     "explanation": "Przeciążanie operatorów (operator overloading) to mechanizm polimorfizmu statycznego, który pozwala nadać nowe znaczenie standardowym operatorom (np. +, -, <<) w odniesieniu do typów zdefiniowanych przez użytkownika. Głównym celem jest zwiększenie czytelności kodu (np. dodawanie macierzy znakiem + zamiast funkcją addMatrix). Istnieją jednak sztywne ograniczenia: nie można zmieniać priorytetów operatorów, ich łączności (lewo/prawostronnej), liczby argumentów (arności) ani tworzyć nowych symboli (jak ** czy <->). Nie można też zmieniać działania operatorów dla typów wbudowanych (np. nie można zmienić znaczenia 2 + 2)."
@@ -184,7 +219,7 @@
         "correct": true
       },
       {
-        "text": "wyłącznie ciąg znaków (string) zakończony znakiem null",
+        "text": "dowolny ciąg znaków (string) zakończony znakiem null",
         "inline_explanation": "",
         "correct": false
       },
@@ -196,6 +231,16 @@
       {
         "text": "wskaźnik do pamięci współdzielonej, który musi być pierwszą zmienną",
         "inline_explanation": "",
+        "correct": false
+      },
+      {
+        "text": "struktura zawierająca typ komunikatu oraz właściwe dane",
+        "inline_explanation": "",
+        "correct": true
+      },
+      {
+        "text": "sygnał systemowy",
+        "inline_explanation": "(sygnał to nie to samo co \"Komunikat\" w sensie Message Queues. Sygnał to prosta liczba przerywająca działanie, nie przenosi złożonych danych)",
         "correct": false
       }
     ],
@@ -224,6 +269,21 @@
         "text": "jest niemożliwa, pamięć współdzielona jest czyszczona tylko przy restarcie systemu",
         "inline_explanation": "(Fałsz, można użyć polecenia ipcrm lub funkcji shmctl)",
         "correct": false
+      },
+      {
+        "text": "powoduje oznaczenie segmentu do usunięcia, ale fizyczne zwolnienie pamięci następuje dopiero po odłączeniu się od niego ostatniego procesu",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "wykonywana jest za pomocą funkcji `shmctl` z flagą `IPC_RMID`",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "wykonywana jest za pomocą funkcji `free` lub `delete`",
+        "inline_explanation": "()",
+        "correct": true
       }
     ],
     "explanation": "Pamięć współdzielona w standardzie System V jest zasobem trwałym (persistent) – nie znika sama po zakończeniu procesów. Musi zostać jawnie usunięta (np. poleceniem ipcrm lub funkcją shmctl). Może to zrobić tylko właściciel segmentu, twórca lub root."
@@ -288,6 +348,16 @@
         "text": "dowiązaniem symbolicznym (symbolic link)",
         "inline_explanation": "(choć w `/dev` jest wiele linków, `/dev/zero` jest zazwyczaj niezależnym węzłem urządzenia)",
         "correct": false
+      },
+      {
+        "text": "dostarczającym nieskończony strumień bajtów zerowych",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "dostarczającym od razu sygnał `EOF`",
+        "inline_explanation": "()",
+        "correct": false
       }
     ],
     "explanation": "Katalog `/dev` zawiera pliki reprezentujące urządzenia. `/dev/zero` to **urządzenie znakowe** (character device). Jego zadaniem jest dostarczanie nieskończonego strumienia bajtów o wartości 0 (null bytes) podczas odczytu (używane np. do bezpiecznego wymazywania dysków poleceniem `dd` lub tworzenia pustych plików o zadanym rozmiarze). Odróżnia się je od urządzeń blokowych (jak dyski `/dev/sda`), które przechowują dane w blokach i pozwalają na swobodny dostęp (seeking)."
@@ -297,7 +367,7 @@
     "question": "Które z wymienionych systemów plików są systemami z dziennikiem (journalling filesystems):",
     "options": [
       {
-        "text": "NTFS (Windows)",
+        "text": "NTFS",
         "inline_explanation": "(standard w systemach Windows NT/10/11; posiada plik dziennika `$LogFile`)",
         "correct": true
       },
@@ -309,6 +379,21 @@
       {
         "text": "XFS",
         "inline_explanation": "(wysokowydajny, 64-bitowy system plików z księgowaniem, domyślny np. w RHEL)",
+        "correct": true
+      },
+      {
+        "text": "XFS",
+        "inline_explanation": "(wysokowydajny, 64-bitowy system plików z księgowaniem, domyślny np. w RHEL)",
+        "correct": true
+      },
+      {
+        "text": "JFS",
+        "inline_explanation": "(stworzony przez IBM)",
+        "correct": true
+      },
+      {
+        "text": "APFS",
+        "inline_explanation": "(Applowski, działa na zasadzie Copy-on-Write)",
         "correct": true
       },
       {
@@ -381,6 +466,11 @@
         "correct": true
       },
       {
+        "text": "zwiększenie licznika linków o 1",
+        "inline_explanation": "(obie nazwy są równoważne, a licznik dowiązań w i-węźle zwiększa się o 1)",
+        "correct": true
+      },
+      {
         "text": "skopiowanie zawartości pliku do nowej lokalizacji na dysku",
         "inline_explanation": "(to działanie polecenia `cp`; hard link nie zajmuje dodatkowego miejsca na dane)",
         "correct": false
@@ -432,7 +522,7 @@
   },
   {
     "id": 14,
-    "question": "Zaznacz prawdziwe zdania dotyczące algorytmów sortowania (Heapsort vs Quicksort).",
+    "question": "Zaznacz prawdziwe zdania dotyczące algorytmów sortowania.",
     "options": [
       {
         "text": "Heapsort jest zwykle szybszy niż Quicksort, jednak posiada gorszą pesymistyczną złożoność czasową",
@@ -610,6 +700,11 @@
         "correct": true
       },
       {
+        "text": "problem kolorowania grafu",
+        "inline_explanation": "(Czy da się pokolorować mapę N kolorami tak, by sąsiedzi mieli inne kolory?)",
+        "correct": true
+      },
+      {
         "text": "wyszukiwanie binarne w posortowanej tablicy",
         "inline_explanation": "(klasa P - problem bardzo łatwy, złożoność $O(\\log n)$)",
         "correct": false
@@ -696,8 +791,13 @@
     "question": "Algorytmem heurystycznym jest:",
     "options": [
       {
-        "text": "algorytm Metropolisa (lub symulowane wyżarzanie)",
+        "text": "algorytm Metropolisa",
         "inline_explanation": "(probabilistyczna metoda szukania minimum globalnego, inspirowana procesem krystalizacji metalu)",
+        "correct": true
+      },
+      {
+        "text": "A*",
+        "inline_explanation": "(również probabilistyczna metoda szukania minimum globalnego, inspirowana procesem krystalizacji metalu)",
         "correct": true
       },
       {
@@ -721,7 +821,7 @@
         "correct": false
       },
       {
-        "text": "algorytm mrówkowy (Ant Colony Optimization)",
+        "text": "algorytm mrówkowy",
         "inline_explanation": "(heurystyka inspirowana zachowaniem mrówek zostawiających ślad feromonowy)",
         "correct": true
       }
@@ -730,7 +830,7 @@
   },
   {
     "id": 23,
-    "question": "Zaznacz prawdziwe zdania dotyczące Prawa Amdahla (wydajność systemów wieloprocesorowych).",
+    "question": "Zaznacz prawdziwe zdania dotyczące Prawa Amdahla.",
     "options": [
       {
         "text": "Zrównoleglając algorytm w 50% programu na 4 procesorach uzyskamy minimum 2-krotne przyspieszenia działania",
@@ -972,14 +1072,39 @@
         "correct": true
       },
       {
+        "text": "wykorzystują algorytm Dijkstry do wyznaczania tras",
+        "inline_explanation": "(nope - Bellmana-Forda)",
+        "correct": true
+      },
+      {
         "text": "posiadają pełną mapę topologii całej sieci",
         "inline_explanation": "(to cecha protokołów Stanu Łącza / Link State jak `OSPF`; DV zna tylko kierunek i odległość)",
         "correct": false
       },
       {
-        "text": "Są podatne na problem zliczania do nieskończoności (Count-to-Infinity) przy awarii łączy",
+        "text": "są podatne na problem zliczania do nieskończoności (Count-to-Infinity) przy awarii łączy",
         "inline_explanation": "(dlatego stosuje się mechanizmy obronne jak Split Horizon czy Route Poisoning)",
         "correct": true
+      },
+      {
+        "text": "RIP",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "IGRP",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "OSPF",
+        "inline_explanation": "()",
+        "correct": false
+      },
+      {
+        "text": "IS-IS",
+        "inline_explanation": "()",
+        "correct": false
       }
     ],
     "explanation": "Protokoły wektora odległości (np. `RIP`, `IGRP`) działają na zasadzie \"plotkowania\" z sąsiadami. Cechy charakterystyczne:\n ⚫ Każdy router wysyła sąsiadom **całą swoją tablicę routingu** (wszystko co wie o sieci).\n ⚫ Działają okresowo (np. `RIP` co 30 sekund).\n ⚫ Router zna tylko kierunek (wektor) i odległość do celu, nie zna topologii całej sieci (nie ma mapy)."
@@ -1009,8 +1134,13 @@
         "correct": false
       },
       {
-        "text": "Gdy osiągnie wartość 0, router odrzuca pakiet i wysyła komunikat `ICMP Time Exceeded`",
+        "text": "gdy osiągnie wartość 0, router odrzuca pakiet i wysyła komunikat `ICMP Time Exceeded`",
         "inline_explanation": "(na tym mechanizmie opiera się działanie narzędzia `traceroute`)",
+        "correct": true
+      },
+      {
+        "text": "określa maksymalną liczbę skoków, jakie pakiet może wykonać",
+        "inline_explanation": "()",
         "correct": true
       }
     ],
@@ -1036,13 +1166,28 @@
         "correct": true
       },
       {
-        "text": "służy do sprawdzenia adresu fizycznego MAC karty sieciowej",
-        "inline_explanation": "(do tego służy polecenie `arp -a` lub `ip neigh`)",
+        "text": "pozwala zidentyfikować adresy IP routerów (węzłów) pośrednich na ścieżce do celu",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "służy do wykrywania pętli routingu lub miejsca awarii sieci",
+        "inline_explanation": "(jeśli trasa urywa się na 5. routerze, wiesz, gdzie szukać problemu)",
+        "correct": true
+      },
+      {
+        "text": "służy do sprawdzania adresów MAC routerów pośrednich",
+        "inline_explanation": "(traceroute działa w warstwie 3 [sieciowej]; adresy MAC [warstwa 2] są tracone przy każdym przeskoku przez router - widzisz tylko IP)",
         "correct": false
       },
       {
         "text": "zawsze wysyła pakiety na port 80 (HTTP)",
         "inline_explanation": "(w implementacji Linux/UDP używa wysokich portów >30000, które są prawdopodobnie zamknięte u celu)",
+        "correct": false
+      },
+      {
+        "text": "modyfikuje tablice routingu na routerach",
+        "inline_explanation": "(to narzędzie pasywne diagnostycznie, nic nie zmienia w konfiguracji sieci)",
         "correct": false
       }
     ],
@@ -1053,17 +1198,22 @@
     "question": "Który z poniższych protokołów routingu jest protokołem stanu łącza (Link State):",
     "options": [
       {
+        "text": "EIGRP",
+        "inline_explanation": "(Enhanced IGRP - nazywa się go protokołem hybrydowym, ale jest to zaawansowany Distance Vector, nie jest to czysty Link State [nie ma pełnej mapy topologii w takim sensie jak OSPF])",
+        "correct": false
+      },
+      {
         "text": "RIPv1",
         "inline_explanation": "(klasyczny protokół wektora odległości - Distance Vector)",
         "correct": false
       },
       {
-        "text": "OSPF (Open Shortest Path First)",
+        "text": "OSPF",
         "inline_explanation": "(najpopularniejszy protokół Link State w sieciach korporacyjnych)",
         "correct": true
       },
       {
-        "text": "IS-IS (Intermediate System to Intermediate System)",
+        "text": "IS-IS",
         "inline_explanation": "(protokół Link State używany głównie przez dostawców usług ISP)",
         "correct": true
       },
@@ -1137,6 +1287,16 @@
         "correct": false
       },
       {
+        "text": "Służy do tłumaczenia nazw domenowych na adresy IP",
+        "inline_explanation": "(to definicja DNS)",
+        "correct": false
+      },
+      {
+        "text": "Służy do zamiany adresów IP na adresy fizyczne MAC",
+        "inline_explanation": "(to definicja ARP)",
+        "correct": false
+      },
+      {
         "text": "Typowa komunikacja przebiega w 4 krokach: Discover, Offer, Request, Acknowledge (DORA)",
         "inline_explanation": "(Klient szuka serwera, Serwer oferuje IP, Klient prosi o ten IP, Serwer potwierdza)",
         "correct": true
@@ -1164,13 +1324,33 @@
         "correct": false
       },
       {
+        "text": "wykorzystuje adresy 32-bitowe",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "wykorzystuje adresy 128-bitowe",
+        "inline_explanation": "(błąd: to jest IPv6)",
+        "correct": false
+      },
+      {
         "text": "jest protokołem warstwy łącza danych (Layer 2)",
         "inline_explanation": "(nie, IP to protokół warstwy 3 - Sieci, służący do adresowania logicznego i routingu)",
         "correct": false
       },
       {
-        "text": "Nagłówek IPv4 zawiera sumę kontrolną obejmującą nagłówek i dane użytkownika (payload)",
+        "text": "nagłówek IPv4 zawiera sumę kontrolną obejmującą nagłówek i dane użytkownika (payload)",
         "inline_explanation": "(fałsz, `Header Checksum` w IPv4 chroni *tylko* nagłówek IP; poprawność danych weryfikują warstwy wyższe, np. TCP/UDP)",
+        "correct": false
+      },
+      {
+        "text": "gwarantuje kolejność dostarczania pakietów",
+        "inline_explanation": "(fałsz, pakiety mogą iść różnymi trasami i dotrzeć \"pomieszane\")",
+        "correct": false
+      },
+      {
+        "text": "posiada wbudowane mechanizmy szyfrowania",
+        "inline_explanation": "(w IPv4 `IPsec` jest opcjonalnym dodatkiem, dopiero w IPv6 był projektowany jako obowiązkowy element standardu)",
         "correct": false
       }
     ],
@@ -1197,12 +1377,17 @@
       },
       {
         "text": "Działa wyłącznie w oparciu o protokół TCP",
-        "inline_explanation": "(nie, standardowe zapytania używają `UDP 53` dla szybkości; `TCP 53` używane jest do transferu stref i dużych odpowiedzi)",
+        "inline_explanation": "(nie, standardowe zapytania używają `UDP` dla szybkości; `TCP` używane jest do transferu stref i dużych odpowiedzi)",
         "correct": false
       },
       {
         "text": "Rekord typu MX (Mail Exchange) w DNS wskazuje serwery pocztowe dla danej domeny",
         "inline_explanation": "(dzięki temu wysyłając e-mail na @firma.pl, serwer wie gdzie dostarczyć wiadomość)",
+        "correct": true
+      },
+      {
+        "text": "Wykorzystuje domyślnie port 53",
+        "inline_explanation": "()",
         "correct": true
       }
     ],
@@ -1236,6 +1421,16 @@
         "text": "wskazać klientowi adres serwera TFTP i nazwę pliku rozruchowego (dla PXE Boot)",
         "inline_explanation": "(opcje 66 i 67, umożliwiające uruchomienie systemu operacyjnego przez sieć)",
         "correct": true
+      },
+      {
+        "text": "na powiązanie adresu IP z adresem MAC",
+        "inline_explanation": "(tzw. rezerwacja statyczna - DHCP pozwala ustawić regułę: \"Jeśli przyjdzie komputer o MAC adresie X, to zawsze daj mu adres Y\")",
+        "correct": true
+      },
+      {
+        "text": "gwarantuje bezpieczeństwo przydzielania adresów",
+        "inline_explanation": "(podstawowy DHCP nie ma uwierzytelniania - każdy może podpiąć \"lewy\" serwer DHCP do sieci i namieszać)",
+        "correct": false
       }
     ],
     "explanation": "DHCP (Dynamic Host Configuration Protocol) konfiguruje parametry sieciowe hosta. Dostarcza: Adres IP, Maskę podsieci, Bramę domyślną, Adresy DNS, nazwę domeny itp.\n **Ważne:** Adres MAC (Media Access Control) jest fizycznym adresem karty sieciowej, nadanym przez producenta. Protokół DHCP **nie nadaje** adresu MAC. Wręcz przeciwnie - serwer DHCP zazwyczaj rozpoznaje klienta właśnie po jego unikalnym adresie MAC, aby przydzielić mu odpowiednie (lub zarezerwowane) IP."
@@ -1538,7 +1733,12 @@
         "correct": false
       },
       {
-        "text": "64 bajty (512 bitów)",
+        "text": "64 bajty",
+        "inline_explanation": "(wynika to z wymogów mechanizmu wykrywania kolizji CSMA/CD)",
+        "correct": true
+      },
+      {
+        "text": "512 bitów",
         "inline_explanation": "(wynika to z wymogów mechanizmu wykrywania kolizji CSMA/CD)",
         "correct": true
       },
@@ -1620,6 +1820,21 @@
         "text": "wykorzystuje mechanizm Gratuitous ARP do wykrywania konfliktów adresów IP",
         "inline_explanation": "(urządzenie ogłasza swój adres, by sprawdzić, czy ktoś inny go nie używa)",
         "correct": true
+      },
+      {
+        "text": "działa w obrębie jednej sieci lokalnej",
+        "inline_explanation": "(ARP nie przechodzi przez routery na zewnątrz)",
+        "correct": true
+      },
+      {
+        "text": "wykorzystuje transmisję rozgłoszeniową (Broadcast) do wysyłania zapytań",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "służy do tłumaczenia adresów MAC na adresy IP",
+        "inline_explanation": "(ARP działa w drugą stronę)",
+        "correct": false
       }
     ],
     "explanation": "ARP służy do mapowania adresu logicznego (IP) na adres fizyczny (MAC). Gdy komputer chce wysłać pakiet do `192.168.1.5`, musi znać adres MAC karty sieciowej tego urządzenia. Wysyła więc zapytanie ARP Broadcast (\"Kto ma 192.168.1.5?\"). Właściwy komputer odpowiada swoim MAC-iem. Dla maszyn bezdyskowych (bootowanie) stosuje się odwrotny protokół: RARP (lub DHCP)."
@@ -1629,12 +1844,12 @@
     "question": "Jakie metody wielodostępu są wykorzystywane w interfejsie radiowym sieci LTE?",
     "options": [
       {
-        "text": "OFDMA (w łączu \"w dół\" - Downlink)",
+        "text": "OFDMA",
         "inline_explanation": "(podział pasma na wiele ortogonalnych podnośnych, co niweluje problem interferencji międzysymbolowych)",
         "correct": true
       },
       {
-        "text": "SC-FDMA (w łączu \"w górę\" - Uplink)",
+        "text": "SC-FDMA",
         "inline_explanation": "(zmodyfikowana wersja OFDMA z mniejszym wskaźnikiem PAPR, co oszczędza baterię w telefonie)",
         "correct": true
       },
@@ -1644,12 +1859,12 @@
         "correct": false
       },
       {
-        "text": "TDMA (Time Division Multiple Access)",
+        "text": "TDMA",
         "inline_explanation": "(główna metoda wielodostępu w sieciach 2G GSM)",
         "correct": false
       },
       {
-        "text": "CDMA (Code Division Multiple Access)",
+        "text": "CDMA",
         "inline_explanation": "(technologia z rozpraszaniem widma, charakterystyczna dla sieci 3G UMTS)",
         "correct": false
       }
@@ -2173,17 +2388,17 @@
     "question": "Format zapisu wykorzystywany w maszynach wirtualnych to:",
     "options": [
       {
-        "text": "OVF (Open Virtualization Format)",
+        "text": "OVF",
         "inline_explanation": "(otwarty standard XML opisujący konfigurację maszyny wirtualnej)",
         "correct": true
       },
       {
-        "text": "VMDK (Virtual Machine Disk)",
+        "text": "VMDK",
         "inline_explanation": "(format dysku wirtualnego stworzony przez firmę VMware)",
         "correct": true
       },
       {
-        "text": "VHD / VHDX (Virtual Hard Disk)",
+        "text": "VHD / VHDX",
         "inline_explanation": "(format dysku wirtualnego używany przez Microsoft Hyper-V)",
         "correct": true
       },
@@ -2193,9 +2408,19 @@
         "correct": false
       },
       {
-        "text": "OVA (Open Virtualization Appliance)",
+        "text": "OVA",
         "inline_explanation": "(pojedynczy plik archiwum zawierający deskryptor OVF i pliki dysków)",
         "correct": true
+      },
+      {
+        "text": "ISO",
+        "inline_explanation": "(to o obraz płyty CD/DVD/Blu-ray)",
+        "correct": false
+      },
+      {
+        "text": "ext4",
+        "inline_explanation": "(to system plików)",
+        "correct": false
       }
     ],
     "explanation": "W wirtualizacji spotykamy formaty opisu maszyny (metadane) oraz formaty dysków. \n ⚫ **OVF:** Otwarty standard pakowania i dystrybucji (przenośny między różnymi hiperwizorami, np. z VMware do VirtualBox). \n ⚫ **VMDK:** Format dysku VMware. \n ⚫ **VHDX:** Nowoczesny format dysku Microsoftu. \n ⚫ **QCOW2:** Popularny format w świecie Linux/KVM (obsługuje snapshoty i kompresję)."
@@ -2260,6 +2485,26 @@
         "text": "przykładem jest VMware ESXi lub Microsoft Hyper-V Server",
         "inline_explanation": "(systemy te instaluje się na czystym serwerze)",
         "correct": true
+      },
+      {
+        "text": "ma bezpośredni dostęp do zasobów sprzętowych",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "nazywany jest również hiperwizorem natywnym",
+        "inline_explanation": "()",
+        "correct": true
+      },
+      {
+        "text": "wymaga zainstalowanego wcześniej systemu Windows lub Linux",
+        "inline_explanation": "(to Typ 2)",
+        "correct": false
+      },
+      {
+        "text": "służy głównie do testowania oprogramowania na stacjach roboczych",
+        "inline_explanation": "(to domena typu 2)",
+        "correct": false
       }
     ],
     "explanation": "Podział hiperwizorów: \n  \n ⚫ **Typ 1 (Bare-metal):** Instalowany na \"gołym metalu\". Przykłady: VMware ESXi, Hyper-V, Xen, KVM (KVM jest hybrydą, ale działa jak Typ 1). Używany w serwerowniach i chmurach. \n ⚫ **Typ 2 (Hosted):** Aplikacja uruchamiana na systemie (Windows/Linux/macOS). Przykłady: VMware Workstation, VirtualBox. Używany do testów i nauki na laptopach."
@@ -2547,6 +2792,21 @@
       {
         "text": "oba są uznane przez NIST za standardy",
         "inline_explanation": "(RSA jest standardem de facto, AES jest standardem rządowym USA)",
+        "correct": true
+      },
+      {
+        "text": "oba służą do podpisu cyfrowego",
+        "inline_explanation": "(AES nie służy do podpisu cyfrowego, tylko RSA)",
+        "correct": false
+      },
+      {
+        "text": "mają tę samą długość klucza",
+        "inline_explanation": "(klucze RSA są wielokrotnie dłuższe)",
+        "correct": false
+      },
+      {
+        "text": "są wspólnie wykorzystywane w systemach szyfrowania hybrydowego",
+        "inline_explanation": "(RSA służy do bezpiecznej wymiany klucza, a AES do szyfrowania właściwych danych)",
         "correct": true
       }
     ],
@@ -4538,3 +4798,4 @@
   }
 
 ]
+
