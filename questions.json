@@ -382,11 +382,6 @@
         "correct": true
       },
       {
-        "text": "XFS",
-        "inline_explanation": "(wysokowydajny, 64-bitowy system plików z księgowaniem, domyślny np. w RHEL)",
-        "correct": true
-      },
-      {
         "text": "JFS",
         "inline_explanation": "(stworzony przez IBM)",
         "correct": true
@@ -490,7 +485,7 @@
   },
   {
     "id": 13,
-    "question": "Jaka jest różnica między kolejkami FIFO (Named Pipes) i łączami komunikacyjnymi (Anonymous Pipes) w systemie UNIX?",
+    "question": "Jaka jest różnica między kolejkami FIFO i łączami komunikacyjnymi w systemie UNIX?",
     "options": [
       {
         "text": "tylko kolejki FIFO mają zdefiniowaną nazwę (wpis w systemie plików)",
@@ -522,7 +517,7 @@
   },
   {
     "id": 14,
-    "question": "Zaznacz prawdziwe zdania dotyczące algorytmów sortowania.",
+    "question": "Zaznacz prawdziwe zdania:",
     "options": [
       {
         "text": "Heapsort jest zwykle szybszy niż Quicksort, jednak posiada gorszą pesymistyczną złożoność czasową",
@@ -650,7 +645,7 @@
   },
   {
     "id": 18,
-    "question": "Zaznacz prawdziwe zdania odnoszące się do analizy algorytmów.",
+    "question": "Zaznacz prawdziwe zdania odnoszące się do algorytmów.",
     "options": [
       {
         "text": "Operacje dominujące to takie, które mogą być pominięte podczas szacowania złożoności obliczeniowej",
@@ -724,7 +719,7 @@
   },
   {
     "id": 20,
-    "question": "Graf może być reprezentowany w pamięci komputera przez:",
+    "question": "Graf może być reprezentowany przez:",
     "options": [
       {
         "text": "macierz incydencji",
@@ -756,7 +751,7 @@
   },
   {
     "id": 21,
-    "question": "Jakie czynniki należy wziąć pod uwagę przy wyborze lub tworzeniu struktur danych?",
+    "question": "Jakie czynniki należy wziąć pod uwagę przy tworzeniu własnych struktur danych?",
     "options": [
       {
         "text": "które operacje będą operacjami częstymi, a jakie rzadkimi",
@@ -830,7 +825,7 @@
   },
   {
     "id": 23,
-    "question": "Zaznacz prawdziwe zdania dotyczące Prawa Amdahla.",
+    "question": "Zaznacz prawdziwe zdania:",
     "options": [
       {
         "text": "Zrównoleglając algorytm w 50% programu na 4 procesorach uzyskamy minimum 2-krotne przyspieszenia działania",
@@ -894,7 +889,7 @@
   },
   {
     "id": 25,
-    "question": "Cechą charakterystyczną zwinnych metod tworzenia oprogramowania (Agile) jest:",
+    "question": "Cechą charakterystyczną zwinnych metod tworzenia oprogramowania jest:",
     "options": [
       {
         "text": "Przeplatanie procesów specyfikacji, projektowania i implementacji (podejście iteracyjne)",
@@ -1054,7 +1049,7 @@
   },
   {
     "id": 30,
-    "question": "Protokoły rutingu typu wektor odległości (Distance Vector):",
+    "question": "Protokoły rutingu typu wektor odległości:",
     "options": [
       {
         "text": "przesyłają do swoich sąsiadów tylko listę podsieci, które są podłączone do nich bezpośrednio",
@@ -1074,7 +1069,7 @@
       {
         "text": "wykorzystują algorytm Dijkstry do wyznaczania tras",
         "inline_explanation": "(nope - Bellmana-Forda)",
-        "correct": true
+        "correct": false
       },
       {
         "text": "posiadają pełną mapę topologii całej sieci",
@@ -1111,7 +1106,7 @@
   },
   {
     "id": 31,
-    "question": "Pole Czas Życia (Time to live - TTL) w nagłówku protokołu IPv4:",
+    "question": "Pole Czas Życia (Time to live) w nagłówku protokołu IPv4:",
     "options": [
       {
         "text": "przeciwdziała skutkom wystąpienia pętli w sieci (zapobiega nieskończonemu krążeniu pakietów)",
@@ -1195,7 +1190,7 @@
   },
   {
     "id": 33,
-    "question": "Który z poniższych protokołów routingu jest protokołem stanu łącza (Link State):",
+    "question": "Który z poniższych protokołów routingu jest protokołem stanu łącza:",
     "options": [
       {
         "text": "EIGRP",
@@ -1358,7 +1353,7 @@
   },
   {
     "id": 37,
-    "question": "Proszę wskazać zdania prawdziwe odnoszące się do systemu DNS:",
+    "question": "Proszę wskazać zdania prawdziwe odnoszące się do DNS:",
     "options": [
       {
         "text": "DNS dokonuje konwersji nazw domenowych na adresy IP (i odwrotnie)",
@@ -1469,7 +1464,7 @@
   },
   {
     "id": 40,
-    "question": "Pamięć podręczna procesora (Cache):",
+    "question": "Pamięć podręczna:",
     "options": [
       {
         "text": "jest pamięcią nieulotną",
@@ -1501,7 +1496,7 @@
   },
   {
     "id": 41,
-    "question": "Przetwarzanie potokowe (pipelining) w procesorach:",
+    "question": "Przetwarzanie potokowe w procesorach rodziny x86:",
     "options": [
       {
         "text": "dzieli cykl przetwarzania instrukcji na odrębne etapy (np. `fetch`, `decode`, `execute`)",
@@ -1533,7 +1528,7 @@
   },
   {
     "id": 42,
-    "question": "W jakim trybie procesor rodziny x86 rozpoczyna pracę (po włączeniu zasilania lub twardym restarcie)?",
+    "question": "W jakim trybie procesor rodziny x86 rozpoczyna pracę?",
     "options": [
       {
         "text": "SMM (System Management Mode)",
@@ -1565,7 +1560,7 @@
   },
   {
     "id": 43,
-    "question": "Do zmiany rozmiaru bufora odbiorczego dla gniazda sieciowego służy funkcja:",
+    "question": "Do zmiany rozmiaru bufora odbiorczego UDP dla gniazda służy funkcja:",
     "options": [
       {
         "text": "`ioctl()`",
@@ -1573,8 +1568,8 @@
         "correct": false
       },
       {
-        "text": "`setsockopt()` z parametrem `SO_RCVBUF`",
-        "inline_explanation": "(standardowa funkcja POSIX do konfiguracji opcji gniazd)",
+        "text": "`setsockopt()`",
+        "inline_explanation": "(z parametrem `SO_RCVBUF` - standardowa funkcja POSIX do konfiguracji opcji gniazd)",
         "correct": true
       },
       {
@@ -1597,7 +1592,7 @@
   },
   {
     "id": 44,
-    "question": "W modelu komunikacji \"klient-serwer\" (TCP/IP), funkcja `bind()` musi być wywołana w procesie:",
+    "question": "W modelu komunikacji \"klient-serwer\", funkcja `bind()` musi być wywołana w procesie:",
     "options": [
       {
         "text": "klienta",
@@ -1629,7 +1624,7 @@
   },
   {
     "id": 45,
-    "question": "Zakres adresów rozsyłania grupowego (multicast) dla protokołu IPv6 jest określony przez:",
+    "question": "Zakres adresów rozsyłania grupowego dla protokołu IPv6 jest określony przez:",
     "options": [
       {
         "text": "pole TTL w nagłówku pakietu",
@@ -1661,7 +1656,7 @@
   },
   {
     "id": 46,
-    "question": "Z czego wynikają interferencje międzysymbolowe (ISI - Inter-Symbol Interference) w radiowych sieciach dostępowych?",
+    "question": "Z czego wynikają interferencje międzysymbolowe w radiowych sieciach dostępowych?",
     "options": [
       {
         "text": "z niedoskonałości filtrów częstotliwości",
@@ -1669,8 +1664,8 @@
         "correct": false
       },
       {
-        "text": "z propagacji wielodrogowej sygnału (Multipath Propagation)",
-        "inline_explanation": "(odbicia sygnału od przeszkód powodują, że \"echa\" symbolu nakładają się na kolejny symbol)",
+        "text": "z propagacji wielodrogowej sygnału",
+        "inline_explanation": "(Multipath Propagation - odbicia sygnału od przeszkód powodują, że \"echa\" symbolu nakładają się na kolejny symbol)",
         "correct": true
       },
       {
@@ -1725,7 +1720,7 @@
   },
   {
     "id": 48,
-    "question": "Minimalna wielkość ramki standardu Ethernet (bez preambuły) wynosi:",
+    "question": "Minimalna wielkość ramki standardu Ethernet wynosi:",
     "options": [
       {
         "text": "48 bitów",
@@ -1762,7 +1757,7 @@
   },
   {
     "id": 49,
-    "question": "Serwer DHCP przydziela adresy z sieci 192.168.0.0. Jaką najdłuższą maskę należy przypisać sieci, aby obsłużyć 512 hostów?",
+    "question": "Serwer DHCP przydziela adresy z sieci o adresie 192.168.0.0. Jaką najdłuższą maskę należy przypisać sieci, aby obsłużyć 512 hostów?",
     "options": [
       {
         "text": "255.255.255.128 (/25)",
@@ -1802,7 +1797,7 @@
         "correct": false
       },
       {
-        "text": "służy do mapowania adresu IP (warstwa 3) na adres fizyczny MAC (warstwa 2)",
+        "text": "służy do mapowania adresu IP na adres fizyczny MAC",
         "inline_explanation": "(kluczowa funkcja umożliwiająca komunikację w sieci Ethernet)",
         "correct": true
       },
@@ -1841,7 +1836,7 @@
   },
   {
     "id": 51,
-    "question": "Jakie metody wielodostępu są wykorzystywane w interfejsie radiowym sieci LTE?",
+    "question": "Jakie metody wielodostępu są wykorzystywane w sieci LTE?",
     "options": [
       {
         "text": "OFDMA",
@@ -1969,7 +1964,7 @@
   },
   {
     "id": 55,
-    "question": "Ścieżka w sieci MPLS (LSP - Label Switched Path) jest:",
+    "question": "Ścieżka w MPLS jest:",
     "options": [
       {
         "text": "obiektem o losowo zmiennych parametrach",
@@ -2001,7 +1996,7 @@
   },
   {
     "id": 56,
-    "question": "Poprawiać skuteczność działania sieci neuronowej (tuning hiperparametrów) można zmieniając m.in.:",
+    "question": "Poprawiać skuteczność działania sieci neuronowej można zmieniając m.in.:",
     "options": [
       {
         "text": "Funkcje aktywacji, liczbę klastrów, typ optymalizatora",
@@ -2033,7 +2028,7 @@
   },
   {
     "id": 57,
-    "question": "Które z poniższych poleceń SQL spowodują całkowite usunięcie tabeli `tblname` (struktury i danych) z bazy?",
+    "question": "Które z poniższych poleceń SQL spowodują całkowite usunięcie tabeli `tblname` z bazy?",
     "options": [
       {
         "text": "`DELETE FROM tblname ;`",
@@ -2065,7 +2060,7 @@
   },
   {
     "id": 58,
-    "question": "Jeżeli polecenie `SELECT * FROM tblname ...` zwraca jeden wiersz, to (wg standardu SQL) kolejność zwróconych kolumn:",
+    "question": "Jeżeli polecenie `SELECT * FROM tblname WHERE ...` zwraca jeden wiersz, to (wg standardu SQL) kolejność zwróconych kolumn:",
     "options": [
       {
         "text": "pokrywa się z kolejnością definicji kolumn w poleceniu `CREATE TABLE`",
@@ -2097,7 +2092,7 @@
   },
   {
     "id": 59,
-    "question": "W bazie istnieje tabela `osoby` z kolumną `imie`. Które z zapytań są poprawne składniowo?",
+    "question": "W bazie istnieje tabela `osoby` z kolumną `imie`. Które z zapytań zostaną poprawne wykonane?",
     "options": [
       {
         "text": "`SELECT * FROM osoby p WHERE imie = 'Jan';`",
@@ -2129,7 +2124,7 @@
   },
   {
     "id": 60,
-    "question": "Które z poniższych stwierdzeń dotyczących wartości `NULL` w SQL są prawdziwe?",
+    "question": "Które z poniższych stwierdzeń są poprawne?",
     "options": [
       {
         "text": "wyrażenie `40 + 60 + NULL` zwraca `100`",
@@ -2225,7 +2220,7 @@
   },
   {
     "id": 63,
-    "question": "Utworzenie indeksu (np. B-Tree) na kolumnie tabeli:",
+    "question": "Utworzenie indeksu do danej tabeli:",
     "options": [
       {
         "text": "zazwyczaj przyspiesza wszystkie operacje na bazie danych",
@@ -2257,7 +2252,7 @@
   },
   {
     "id": 64,
-    "question": "Przed którymi zjawiskami chroni poziom izolacji transakcji \"Read Committed\" (domyślny w PostgreSQL/Oracle)?",
+    "question": "Przed którymi szkodliwymi efektami chroni tryb izolacji transakcji \"Read Committed\" (domyślny w PostgreSQL)?",
     "options": [
       {
         "text": "Dirty Read (Brudny odczyt)",
@@ -2427,7 +2422,7 @@
   },
   {
     "id": 69,
-    "question": "Pamięci masowe wykorzystywane w środowisku zwirtualizowanym (jako Datastore):",
+    "question": "Pamięci masowe wykorzystywane w maszynach wirtualnych:",
     "options": [
       {
         "text": "NFS (Network File System)",
@@ -2459,7 +2454,7 @@
   },
   {
     "id": 70,
-    "question": "Hiperwizor typu 1 (Bare-metal):",
+    "question": "Hiperwizor typu 1:",
     "options": [
       {
         "text": "pracuje bezpośrednio na systemie operacyjnym gospodarza",
@@ -2543,7 +2538,7 @@
   },
   {
     "id": 72,
-    "question": "Poufność danych cyfrowych (Confidentiality) jest zapewniana przede wszystkim dzięki:",
+    "question": "Poufność danych cyfrowych jest zapewniana dzięki:",
     "options": [
       {
         "text": "kryptografii (szyfrowaniu danych)",
@@ -2607,7 +2602,7 @@
   },
   {
     "id": 74,
-    "question": "Szyfr monoalfabetyczny (np. Szyfr Cezara):",
+    "question": "Szyfr monoalfabetyczny:",
     "options": [
       {
         "text": "zachowuje statystykę (częstość występowania znaków) języka szyfrowanej wiadomości",
@@ -2639,7 +2634,7 @@
   },
   {
     "id": 75,
-    "question": "Bezpieczne szyfry powinny charakteryzować się:",
+    "question": "Bezpieczne szyfry powinny mieć następującą własność:",
     "options": [
       {
         "text": "spełnianiem kryterium lawinowości (Avalanche Effect)",
@@ -2671,7 +2666,7 @@
   },
   {
     "id": 76,
-    "question": "Bezpieczna funkcja skrótu kryptograficznego musi być odporna na:",
+    "question": "Bezpieczna funkcja skrótu musi być odporna na:",
     "options": [
       {
         "text": "faktoryzację",
@@ -2846,7 +2841,7 @@
   },
   {
     "id": 81,
-    "question": "Certyfikat klucza publicznego w standardzie X.509 zawiera:",
+    "question": "Certyfikat klucza publicznego w formacie X.509 zawiera:",
     "options": [
       {
         "text": "identyfikator (Distinguished Name) centrum certyfikacyjnego, które wystawiło certyfikat",
@@ -2878,7 +2873,7 @@
   },
   {
     "id": 82,
-    "question": "Bezpieczeństwo kryptografii kwantowej (np. protokołu QKD BB84) bazuje na:",
+    "question": "Bezpieczeństwo kryptografii kwantowej bazuje na:",
     "options": [
       {
         "text": "zjawisku, w którym pomiar zaburza stan kwantowy",
@@ -2888,6 +2883,16 @@
       {
         "text": "twierdzeniu o zakazie klonowania (No-cloning theorem)",
         "inline_explanation": "(nie da się stworzyć idealnej kopii nieznanego stanu kwantowego)",
+        "correct": true
+      },
+      {
+        "text": "prawach fizyki",
+        "inline_explanation": "(nie da się oszukać praw natury, niezależnie od tego, jak szybki masz komputer)",
+        "correct": true
+      },
+      {
+        "text": "zasadzie nieoznaczoności Heisenberga",
+        "inline_explanation": "()",
         "correct": true
       },
       {
@@ -2904,16 +2909,26 @@
         "text": "szyfrowaniu samej wiadomości (payloadu) za pomocą stanów kwantowych",
         "inline_explanation": "(obecnie technologia QKD służy do uzgodnienia klucza, a sama wiadomość jest szyfrowana klasycznie, np. AES-em)",
         "correct": false
+      },
+      {
+        "text": "na problemie logarytmu dyskretnego",
+        "inline_explanation": "(to dotyczy Diffie-Hellman/ECC)",
+        "correct": false
+      },
+      {
+        "text": "na długości klucza powyżej 4096 bitów",
+        "inline_explanation": "(długość klucza jest wtórna, ważny jest sposób jego przesyłania)",
+        "correct": false
       }
     ],
     "explanation": "Kryptografia kwantowa opiera się na prawach fizyki, a nie matematyki. \n  \n Jeśli podsłuchiwacz (Ewa) spróbuje zmierzyć przesyłane fotony, zgodnie z **Zasadą Nieoznaczoności Heisenberga**, nieuchronnie zmieni ich stan. Legalni użytkownicy (Alicja i Bob) porównują próbkę danych i jeśli wykryją błędy (ber > 0), wiedzą, że kanał jest podsłuchiwany."
   },
   {
     "id": 83,
-    "question": "Uwierzytelnianie typu wyzwanie-odpowiedź (Challenge-Response):",
+    "question": "Uwierzytelnianie typu challenge-response:",
     "options": [
       {
-        "text": "wymaga komunikacji wyłącznie poprzez protokół UDP",
+        "text": "wymaga komunikacji poprzez protokół UDP",
         "inline_explanation": "(mechanizm ten jest niezależny od warstwy transportowej; działa też na TCP, HTTP itd.)",
         "correct": false
       },
@@ -2942,7 +2957,7 @@
   },
   {
     "id": 84,
-    "question": "Atak typu DDoS (Distributed Denial of Service):",
+    "question": "Skuteczny atak typu DDoS (Distributed Denial of Service):",
     "options": [
       {
         "text": "wymaga wcześniejszego złamania haseł administratora atakowanego systemu",
@@ -3038,7 +3053,7 @@
   },
   {
     "id": 87,
-    "question": "Odwrotność liczby $x$ modulo $N$ ($x^{-1} \\pmod N$):",
+    "question": "Odwrotność liczby $x$ modulo $N$:",
     "options": [
       {
         "text": "Można wyliczyć z użyciem Rozszerzonego Algorytmu Euklidesa",
@@ -3070,15 +3085,15 @@
   },
   {
     "id": 88,
-    "question": "Aby utrudnić inżynierię wsteczną (Reverse Engineering) oprogramowania stosuje się:",
+    "question": "Aby utrudnić inżynierię wsteczną oprogramowania stosuje się:",
     "options": [
       {
-        "text": "obfuskację (zaciemnianie kodu)",
-        "inline_explanation": "(np. zamiana nazw zmiennych na losowe ciągi znaków, dodawanie martwego kodu)",
+        "text": "obfuskację",
+        "inline_explanation": "(zaciemnianie kodu - np. zamiana nazw zmiennych na losowe ciągi znaków, dodawanie martwego kodu)",
         "correct": true
       },
       {
-        "text": "pakowanie kodu wykonywalnego (packers)",
+        "text": "pakowanie kodu wykonywalnego",
         "inline_explanation": "(kompresja i szyfrowanie pliku .exe, który rozpakowuje się dopiero w pamięci RAM)",
         "correct": true
       },
@@ -3105,17 +3120,17 @@
     "question": "Wirtualne sieci prywatne (VPN) można tworzyć przy wykorzystaniu protokołu:",
     "options": [
       {
-        "text": "TLS (Transport Layer Security)",
+        "text": "TLS",
         "inline_explanation": "(np. OpenVPN, SSL VPN - działa w warstwie aplikacji/sesji)",
         "correct": true
       },
       {
-        "text": "IPsec (Internet Protocol Security)",
+        "text": "IPsec",
         "inline_explanation": "(standard działający w warstwie sieciowej - Layer 3)",
         "correct": true
       },
       {
-        "text": "L2TP (Layer 2 Tunneling Protocol)",
+        "text": "L2TP",
         "inline_explanation": "(często używany w parze z IPsec jako L2TP/IPsec)",
         "correct": true
       },
@@ -3166,7 +3181,7 @@
   },
   {
     "id": 91,
-    "question": "Systemy wykrywania włamań (IDS) oparte na sygnaturach (Signature-based):",
+    "question": "Systemy wykrywania zagrożeń (IDS) oparte na sygnaturach (Signature-based):",
     "options": [
       {
         "text": "działają z reguły szybciej niż systemy bazujące na wykrywaniu anomalii",
@@ -3198,26 +3213,26 @@
   },
   {
     "id": 92,
-    "question": "Serwer AAA (np. RADIUS, TACACS+) realizuje usługi:",
+    "question": "Serwer AAA realizuje usługi:",
     "options": [
       {
-        "text": "Autoryzacja (Authorization)",
-        "inline_explanation": "(określenie uprawnień: co użytkownik może zrobić?)",
+        "text": "Autoryzacja",
+        "inline_explanation": "(Authorization - określenie uprawnień: co użytkownik może zrobić?)",
         "correct": true
       },
       {
-        "text": "Uwierzytelnianie (Authentication)",
-        "inline_explanation": "(weryfikacja tożsamości: kim użytkownik jest?)",
+        "text": "Uwierzytelnianie",
+        "inline_explanation": "(Authentication - weryfikacja tożsamości: kim użytkownik jest?)",
         "correct": true
       },
       {
-        "text": "Rozliczalność (Accounting)",
-        "inline_explanation": "(rejestrowanie aktywności: co i jak długo robił?)",
+        "text": "Rozliczalność",
+        "inline_explanation": "(Accounting - rejestrowanie aktywności: co i jak długo robił?)",
         "correct": true
       },
       {
-        "text": "Adresacja IP (Addressing)",
-        "inline_explanation": "(przydziałem adresów zajmuje się DHCP, a nie framework AAA)",
+        "text": "Adresacja IP",
+        "inline_explanation": "(Addressing - przydziałem adresów zajmuje się DHCP, a nie framework AAA)",
         "correct": false
       },
       {
@@ -3294,7 +3309,7 @@
   },
   {
     "id": 95,
-    "question": "Wyrażana w bitach entropia Shannona dla źródła wiadomości:",
+    "question": "Wyrażana w bitach entropia dla źródła wiadomości:",
     "options": [
       {
         "text": "może wynosić -0,76 bita (jest ujemna)",
@@ -3326,7 +3341,7 @@
   },
   {
     "id": 96,
-    "question": "Proszę wskazać zdanie **FAŁSZYWE** w odniesieniu do ciał skończonych (Galois Fields):",
+    "question": "Proszę wskazać zdanie **FAŁSZYWE** w odniesieniu do ciał Galois:",
     "options": [
       {
         "text": "Ciało na pewno zawiera element odwrotny dla elementu neutralnego dodawania (zera)",
@@ -3358,7 +3373,7 @@
   },
   {
     "id": 97,
-    "question": "Gdyby komputery kwantowe o dużej mocy stały się faktem, algorytm Shora wymusiłby rezygnację z:",
+    "question": "Gdyby komputery kwantowe się upowszechniły, algorytm Shora wymusiłby rezygnację z:",
     "options": [
       {
         "text": "funkcji skrótu SHA-3",
@@ -3454,7 +3469,7 @@
   },
   {
     "id": 100,
-    "question": "Funkcja skrótu SHA-3 jest oparta na konstrukcji:",
+    "question": "Funkcja mieszająca SHA-3 jest oparta na kocepcji:",
     "options": [
       {
         "text": "ElGamal",
@@ -3486,7 +3501,7 @@
   },
   {
     "id": 101,
-    "question": "Jakie ramki zarządzające są wymieniane w standardowym procesie przyłączania stacji do punktu dostępowego (Access Point) w sieci Wi-Fi?",
+    "question": "Jakie ramki są wymieniane w procesie przyłączania stacji do punktu dostępowego?",
     "options": [
       {
         "text": "Authentication Request / Authentication Response",
@@ -3518,7 +3533,7 @@
   },
   {
     "id": 102,
-    "question": "Jaką długość może mieć w sieciach IEEE 802.11 tzw. 'secret key' (np. PMK w WPA2)?",
+    "question": "Jaką długość może mieć w sieciach IEEE 802.11 tzw. 'secret key'?",
     "options": [
       {
         "text": "256 bitów",
@@ -3528,7 +3543,7 @@
       {
         "text": "128 bitów",
         "inline_explanation": "(typowa długość klucza szyfrującego dane w algorytmie AES-CCMP)",
-        "correct": true
+        "correct": false
       },
       {
         "text": "40 bitów",
@@ -3550,39 +3565,39 @@
   },
   {
     "id": 103,
-    "question": "Atak DoS w sieciach Wi-Fi polegający na manipulacji ramkami RTS/CTS (tzw. NAV Attack) opiera się na:",
+    "question": "Atak z użyciem ramek RTS, który powoduje blokadę dostępu do kanału radiowego (RTS flood attack) opiera się na:",
     "options": [
       {
-        "text": "fizycznym zagłuszaniu częstotliwości szumem (Jamming)",
-        "inline_explanation": "(to atak fizyczny, a nie na poziomie protokołu)",
-        "correct": false
-      },
-      {
-        "text": "manipulacji wartością pola Duration w nagłówku MAC",
-        "inline_explanation": "(atakujący wpisuje tam maksymalną wartość, okłamując inne stacje)",
+        "text": "manipulacji mechanizmem wirtualnego wykrywania nośnej (NAV) poprzez ustawienie maksymalnej wartości w polu Duration",
+        "inline_explanation": "(atakujący rezerwuje kanał na długi czas, zmuszając inne stacje do milczenia, nawet jeśli kanał jest wolny)",
         "correct": true
       },
       {
-        "text": "rezerwowaniu kanału na maksymalny możliwy czas, zmuszając inne stacje do milczenia",
-        "inline_explanation": "(mechanizm Virtual Carrier Sensing)",
-        "correct": true
-      },
-      {
-        "text": "wysyłaniu ramek Deauthentication",
-        "inline_explanation": "(to inny typ ataku DoS, polegający na rozłączaniu klientów)",
+        "text": "wydłużaniu okna Contention Window w innych stacjach",
+        "inline_explanation": "(to mechanizm używany przy kolizjach w CSMA/CA, ale RTS Flood atakuje wektor NAV, a nie bezpośrednio algorytm backoff)",
         "correct": false
       },
       {
-        "text": "wydłużaniu czasu szczeliny (Slot Time)",
-        "inline_explanation": "(parametr ten jest stały dla standardu, np. 9µs w 802.11n, i nie można go zmienić ramką)",
+        "text": "wysyłaniu ramek Deauthentication do wszystkich klientów",
+        "inline_explanation": "(to inny typ ataku: Deauth Attack, który rozłącza klientów, a nie blokuje kanał rezerwacją)",
+        "correct": false
+      },
+      {
+        "text": "fizycznym zagłuszaniu częstotliwości radiowej silnym sygnałem szumowym",
+        "inline_explanation": "(to atak typu Jamming w warstwie fizycznej, a RTS Flood to atak logiczny w warstwie łącza danych)",
+        "correct": false
+      },
+      {
+        "text": "przepełnieniu tablicy adresów MAC w przełączniku (Switchu)",
+        "inline_explanation": "(atak MAC Flooding dotyczy sieci przewodowych Ethernet, a nie Wi-Fi)",
         "correct": false
       }
     ],
-    "explanation": "Mechanizm CSMA/CA w WiFi wykorzystuje wirtualne wykrywanie nośnika. \n  \n Ramki RTS/CTS zawierają pole `Duration`. Inne stacje, słysząc taką ramkę, ustawiają swój licznik **NAV (Network Allocation Vector)** i milczą przez ten czas, oszczędzając energię i unikając kolizji. Atakujący wysyła fałszywe rezerwacje na maksymalny czas (ok. 32 ms), blokując kanał dla wszystkich."
+    "explanation": "Atak RTS Flood wykorzystuje mechanizm **NAV (Network Allocation Vector)**. Atakujący wysyła ramki RTS z fałszywą, bardzo dużą wartością w polu **Duration**. Wszystkie stacje w zasięgu, które odbiorą taką ramkę, muszą zgodnie ze standardem 802.11 zaktualizować swój licznik NAV i wstrzymać nadawanie na ten czas, uznając kanał za zajęty (Virtual Carrier Sense), co prowadzi do ataku odmowy dostępu (DoS)."
   },
   {
     "id": 104,
-    "question": "Atak ARP Poisoning (ARP Spoofing) w sieciach lokalnych:",
+    "question": "Atak ARP Poisoning w sieciach IEEE 802.11:",
     "options": [
       {
         "text": "polega na przypisaniu wielu adresów IP do jednej karty sieciowej",
@@ -3614,7 +3629,7 @@
   },
   {
     "id": 105,
-    "question": "W przełączniku (switch) odebrano ramkę, w której adres źródłowy MAC jest nieznany, a adres docelowy MAC również jest nieznany. Tablica adresów MAC:",
+    "question": "W przełączniku zgodnym ze standardem IEEE 802.3 i pracującym z domyślnymi ustawieniami odebrano ramkę o nieznanym adresie źródłowym oraz nieznanym adresie docelowym. Tablica adresów MAC:",
     "options": [
       {
         "text": "zostanie zwiększona o 2 adresy",
@@ -3625,6 +3640,11 @@
         "text": "zostanie zwiększona o 1 adres (adres nadawcy)",
         "inline_explanation": "(switch uczy się: \"na tym porcie jest nadawca o takim MAC\")",
         "correct": true
+      },
+      {
+        "text": "zostanie zwiększona o 1 adres (adres odbiorcy)",
+        "inline_explanation": "(nope - o adres nadawcy)",
+        "correct": false
       },
       {
         "text": "nie ulegnie zmianie",
@@ -3649,7 +3669,7 @@
     "question": "Sieci VLAN (Virtual LAN) stosuje się m.in. w celu:",
     "options": [
       {
-        "text": "ograniczenia domeny rozgłoszeniowej (broadcast domain)",
+        "text": "ograniczenia domeny domyślnej",
         "inline_explanation": "(ramki broadcast nie \"wyciekają\" poza obręb danego VLAN-u, co zmniejsza zbędny ruch w sieci)",
         "correct": true
       },
@@ -3669,8 +3689,18 @@
         "correct": false
       },
       {
-        "text": "separacji ruchu sieciowego (Security)",
+        "text": "ograniczenia domeny kolizyjnej",
+        "inline_explanation": "(to robi switch sam z siebie, nawet bez VLAN)",
+        "correct": false
+      },
+      {
+        "text": "separacji ruchu sieciowego",
         "inline_explanation": "(np. oddzielenie sieci gości od sieci księgowości, co zwiększa bezpieczeństwo)",
+        "correct": true
+      },
+      {
+        "text": "logicznego grupowania stacji roboczych niezależnie od ich fizycznej lokalizacji",
+        "inline_explanation": "(pracownik może przenieść biurko na inne piętro, a administrator tylko zmienia konfigurację portu w switchu, żeby nadal był w tej samej podsieci)",
         "correct": true
       }
     ],
@@ -3678,7 +3708,7 @@
   },
   {
     "id": 107,
-    "question": "Jakie nowe techniki zostały wprowadzone w standardzie IEEE 802.11ax (Wi-Fi 6)?",
+    "question": "Jakie nowe elementy zostały wprowadzone w standardzie IEEE 802.11ax?",
     "options": [
       {
         "text": "Kolorowanie obszarów BSS (BSS Coloring)",
@@ -3710,7 +3740,7 @@
   },
   {
     "id": 108,
-    "question": "Jaki algorytm szyfrowania jest obowiązkowo stosowany w standardzie WPA2 (zgodnym z IEEE 802.11i)?",
+    "question": "Jakie algorytmy szyfrowania są stosowane w mechanizmie WPA2 standardu IEEE 802.11?",
     "options": [
       {
         "text": "RC5",
@@ -3742,7 +3772,7 @@
   },
   {
     "id": 109,
-    "question": "Protokół TLS (Transport Layer Security) w procesie nawiązywania połączenia (Handshake) korzysta z:",
+    "question": "Protokół TLS korzysta z:",
     "options": [
       {
         "text": "Infrastruktury Klucza Publicznego (PKI) i certyfikatów X.509",
@@ -3774,10 +3804,10 @@
   },
   {
     "id": 110,
-    "question": "Atak typu MAC Flooding na przełącznik sieciowy (switch) ma na celu:",
+    "question": "MAC Flooding oznacza:",
     "options": [
       {
-        "text": "przesłanie tablic adresów MAC do administratora",
+        "text": "przesyłanie tablic adresów MAC",
         "inline_explanation": "(nie, to atak ofensywny, a nie audyt)",
         "correct": false
       },
@@ -3806,35 +3836,35 @@
   },
   {
     "id": 111,
-    "question": "Kryptoanaliza szyfru przestawieniowego (Transposition Cipher) opiera się na fakcie, że:",
+    "question": "Kryptoanaliza szyfru przestawieniowego może korzystać z:",
     "options": [
       {
-        "text": "histogram (rozkład częstości) znaków w szyfrogramie jest identyczny jak w języku naturalnym",
-        "inline_explanation": "(szyfr zmienia tylko kolejność liter, a nie same litery, więc statystyka 'A', 'E' itd. pozostaje bez zmian)",
+        "text": "analizy częstotliwościowej",
+        "inline_explanation": "(badanie histogramu znaków - ponieważ szyfr zmienia tylko kolejność liter, a nie same litery, więc statystyka występowania liter pozostaje identyczna jak w języku naturalnym)",
         "correct": true
       },
       {
-        "text": "przestrzeń kluczy jest zazwyczaj bardzo mała (np. 8 bitów)",
-        "inline_explanation": "(zależy od długości bloku permutacji, ale dla długich bloków $n!$ jest ogromne)",
+        "text": "faktu, że przestrzeń kluczy jest zazwyczaj bardzo mała (np. 8 bitów)",
+        "inline_explanation": "(zależy od długości bloku permutacji, ale dla długich bloków liczba kombinacji n! jest ogromna)",
         "correct": false
       },
       {
-        "text": "wymaga on analizy różnicowej",
-        "inline_explanation": "(metoda ta służy głównie do łamania nowoczesnych szyfrów blokowych)",
+        "text": "metod analizy różnicowej",
+        "inline_explanation": "(metoda ta służy głównie do łamania nowoczesnych szyfrów blokowych, badając wpływ zmian w tekście jawnym na szyfrogram)",
         "correct": false
       },
       {
-        "text": "opiera się na problemie faktoryzacji liczb",
-        "inline_explanation": "(to domena RSA)",
+        "text": "algorytmów faktoryzacji dużych liczb",
+        "inline_explanation": "(to domena kryptoanalizy asymetrycznej, np. RSA)",
         "correct": false
       },
       {
-        "text": "szyfrogram ma zupełnie inny rozkład liter niż tekst jawny (wygładzony histogram)",
-        "inline_explanation": "(fałsz, to cecha szyfrów polialfabetycznych, a nie przestawieniowych)",
+        "text": "obserwacji, że szyfrogram ma wygładzony (płaski) rozkład liter",
+        "inline_explanation": "(fałsz, wygładzenie histogramu to cecha szyfrów polialfabetycznych; w przestawieniowym 'górki i dołki' zostają zachowane)",
         "correct": false
       }
     ],
-    "explanation": "Szyfr przestawieniowy to po prostu anagramowanie. \n Jeśli zaszyfrujesz słowo \"KAJAK\", otrzymasz np. \"AAKJK\". Liczba liter 'A' i 'K' się nie zmienia. Kryptoanalityk, widząc tekst o normalnym rozkładzie liter (dużo samogłosek), ale nieczytelny, od razu wie, że to szyfr przestawieniowy."
+    "explanation": "Szyfr przestawieniowy to po prostu anagramowanie (zmiana kolejności). \n Jeśli zaszyfrujesz słowo \"KAJAK\", otrzymasz np. \"AAKJK\". Liczba liter 'A' i 'K' się nie zmienia.\n\nKryptoanalityk używa **analizy częstotliwościowej**: widząc tekst, w którym litery takie jak A, E, O występują bardzo często (jak w normalnym języku), ale tekst jest nieczytelny, od razu wie, że litery nie zostały zmienione, a jedynie poprzestawiane."
   },
   {
     "id": 112,
@@ -3902,39 +3932,39 @@
   },
   {
     "id": 114,
-    "question": "W protokole uzgadniania klucza Diffiego-Hellmana:",
+    "question": "Które stwierdzenie w odniesieniu do schematu uzgadniania klucza metodą Diffiego-Hellmana jest prawdziwe?",
     "options": [
       {
-        "text": "jedna ze stron generuje klucz i przesyła go drugiej stronie w bezpiecznej kopercie",
-        "inline_explanation": "(to model Key Transport, np. RSA, a nie Key Agreement jak DH)",
+        "text": "Alicja samodzielnie oblicza swój klucz prywatny a następnie dostarcza go do Boba w bezpieczny sposób",
+        "inline_explanation": "(Fałsz. W DH klucz prywatny nigdy nie jest przesyłany. To, co opisano, to transport klucza, a nie jego uzgadnianie)",
         "correct": false
       },
       {
-        "text": "strony wymieniają się wyłącznie wartościami publicznymi, a wspólny sekret obliczają matematycznie",
-        "inline_explanation": "(klucze prywatne nigdy nie są przesyłane przez sieć)",
+        "text": "Alicja i Bob wymieniają się wyłącznie wartościami publicznymi, a wspólny sekret obliczają niezależnie u siebie",
+        "inline_explanation": "(Prawda. Na podstawie wymiany \"wymieszanych\" danych publicznych obie strony dochodzą do tego samego wyniku matematycznego)",
         "correct": true
       },
       {
-        "text": "bezpieczeństwo opiera się na trudności problemu logarytmu dyskretnego",
-        "inline_explanation": "(znalezienie wykładnika $x$ mając $g^x \\mod p$ jest obliczeniowo trudne)",
+        "text": "Bezpieczeństwo schematu opiera się na trudności problemu logarytmu dyskretnego",
+        "inline_explanation": "(Prawda. Ewa widzi g^a i g^b, ale nie potrafi obliczyć 'a' ani 'b' w rozsądnym czasie)",
         "correct": true
       },
       {
-        "text": "algorytm służy bezpośrednio do szyfrowania plików",
-        "inline_explanation": "(służy tylko do ustalenia klucza, którym potem szyfruje np. AES)",
+        "text": "Algorytm ten pozwala Alicji bezpośrednio zaszyfrować plik i wysłać go do Boba",
+        "inline_explanation": "(Fałsz. DH służy tylko do wygenerowania klucza. Do szyfrowania pliku używa się potem np. AES)",
         "correct": false
       },
       {
-        "text": "system jest całkowicie odporny na komputery kwantowe",
-        "inline_explanation": "(nie, algorytm Shora łamie DH w czasie wielomianowym)",
+        "text": "Schemat ten gwarantuje, że Alicja na pewno rozmawia z Bobem (uwierzytelnianie)",
+        "inline_explanation": "(Fałsz. Czysty DH nie zapewnia uwierzytelniania i jest podatny na atak Man-in-the-Middle; wymaga dodatkowych podpisów)",
         "correct": false
       }
     ],
-    "explanation": "Istotą DH jest to, że Alicja i Bob mogą uzgodnić kolor (klucz), krzycząc do siebie przez pokój pełen ludzi, a nikt inny nie będzie wiedział, jaki to kolor. \n Wymieniają się \"wymieszanymi\" danymi publicznymi, a klucz końcowy powstaje dopiero w ich głowach (komputerach) dzięki matematyce potęgowania modularnego."
+    "explanation": "W protokole Diffiego-Hellmana **klucze prywatne nigdy nie opuszczają komputerów Alicji i Boba**. \n\nIstotą jest to, że wymieniają się oni publicznymi \"półproduktami\". Dzięki matematyce (potęgowaniu modularnemu), po połączeniu swojego tajnego składnika z publicznym składnikiem partnera, oboje uzyskują identyczny **wspólny sekret**, mimo że nigdy go sobie nie przesłali."
   },
   {
     "id": 115,
-    "question": "Przykładem uczenia nienadzorowanego (Unsupervised Learning) jest:",
+    "question": "Przykładem uczenia nienadzorowanego jest:",
     "options": [
       {
         "text": "wykrywanie spamu w poczcie",
@@ -3966,39 +3996,39 @@
   },
   {
     "id": 116,
-    "question": "Algorytm wykrywania anomalii w systemach IDS (Intrusion Detection System) jest szczególnie przydatny, gdy:",
+    "question": "Budując system detekcji ataków sieciowych, można rozważyć algorytm wykrywania anomalii w szczególności gdy:",
     "options": [
       {
-        "text": "chcemy wykrywać ataki typu Zero-Day (nieznane wcześniej)",
-        "inline_explanation": "(anomalie to odchylenia od normy, więc system wykryje coś \"dziwnego\" nawet jeśli nie ma na to sygnatury)",
+        "text": "dane wyjściowe mają większy wymiar niż dane wejściowe",
+        "inline_explanation": "(To techniczny aspekt niektórych metod, a nie powód wyboru podejścia; często w detekcji anomalii dążymy wręcz do redukcji wymiaru, by znaleźć wzorzec normy)",
+        "correct": false
+      },
+      {
+        "text": "zależy nam na wykrywaniu nowych, nieznanych wcześniej typów ataków (tzw. Zero-day)",
+        "inline_explanation": "(Systemy oparte na anomaliach nie szukają konkretnego wirusa, lecz wszystkiego, co odbiega od normy)",
         "correct": true
       },
       {
-        "text": "zależy nam na zerowym poziomie fałszywych alarmów (False Positives)",
-        "inline_explanation": "(systemy anomalii generują dużo fałszywych alarmów, bo każdy nietypowy, ale legalny ruch jest podejrzany)",
+        "text": "dysponujemy ogromną bazą sygnatur znanych zagrożeń i chcemy zminimalizować liczbę fałszywych alarmów",
+        "inline_explanation": "(Wtedy lepszy jest system oparty na sygnaturach/regułach; anomalie generują dużo fałszywych alarmów)",
         "correct": false
       },
       {
-        "text": "nie posiadamy wystarczającej mocy obliczeniowej",
-        "inline_explanation": "(analiza statystyczna/behawioralna wymaga więcej zasobów niż proste porównywanie sygnatur)",
-        "correct": false
+        "text": "dane treningowe są silnie niezbalansowane (mamy dużo przykładów ruchu prawidłowego, a bardzo mało przykładów ataków)",
+        "inline_explanation": "(To idealne środowisko dla detekcji anomalii – uczymy system co jest 'normalne', a atak jest odrzucany jako 'inny')",
+        "correct": true
       },
       {
-        "text": "chcemy, aby system działał szybciej niż ten oparty na sygnaturach",
-        "inline_explanation": "(jest odwrotnie, analiza anomalii jest wolniejsza)",
-        "correct": false
-      },
-      {
-        "text": "dane wejściowe mają większy wymiar niż dane wyjściowe",
-        "inline_explanation": "(to opis techniczny dotyczący np. kompresji danych, bez związku z logiką IDS)",
+        "text": "system ma działać w oparciu o sztywne reguły (np. Firewall)",
+        "inline_explanation": "(Detekcja anomalii to podejście probabilistyczne/statystyczne, a nie regułowe)",
         "correct": false
       }
     ],
-    "explanation": "Metody oparte na anomaliach uczą się profilu \"normalnego\" ruchu sieciowego. \n  \n Jeśli ruch odbiega od normy (np. nagły skok transferu o 3:00 w nocy), system wszczyna alarm. Dzięki temu wykrywa ataki **Zero-Day**, na które nie ma jeszcze sygnatur (szczepionek)."
+    "explanation": "Systemy IDS (Intrusion Detection System) dzielimy na:\n1. **Oparte na sygnaturach:** Szukają znanych wzorców (jak antywirus). Są precyzyjne, ale ślepe na nowe ataki.\n2. **Oparte na anomaliach:** Uczą się \"normalnego\" zachowania sieci. Wszystko, co odbiega od normy, jest alarmem.\n\nAlgorytm anomalii wybieramy, gdy boimy się ataków, których jeszcze nikt nie nazwał (Zero-day) lub nie mamy próbek ataków do nauczenia sieci neuronowej."
   },
   {
     "id": 117,
-    "question": "Termin SQL Injection (SQLi) oznacza:",
+    "question": "Termin SQL Injection oznacza:",
     "options": [
       {
         "text": "możliwość umieszczenia zapytania SQL w kodzie źródłowym strony",
@@ -4030,39 +4060,39 @@
   },
   {
     "id": 118,
-    "question": "Prawdziwe stwierdzenie dotyczące certyfikatów X.509:",
+    "question": "Które stwierdzenie w odniesieniu do certyfikatów X.509 jest prawdziwe?",
     "options": [
       {
-        "text": "są wykorzystywane do weryfikacji tożsamości strony w procesie nawiązywania połączenia SSL/TLS",
-        "inline_explanation": "(przeglądarka sprawdza certyfikat serwera, by upewnić się, że łączy się z właściwym bankiem)",
+        "text": "są wykorzystywane do wykonywania cyfrowych podpisów na cyfrowych dokumentach",
+        "inline_explanation": "(Tak, certyfikat wiąże tożsamość osoby podpisującej z jej kluczem publicznym, co zapewnia autentyczność i niezaprzeczalność podpisu)",
         "correct": true
       },
       {
-        "text": "zawierają w sobie klucz prywatny użytkownika",
-        "inline_explanation": "(klucz prywatny nigdy nie jest częścią publicznego certyfikatu)",
+        "text": "zawierają w sobie jawną kopię klucza prywatnego użytkownika",
+        "inline_explanation": "(Fałsz. Certyfikat jest publiczny, a klucz prywatny musi pozostać wyłączną tajemnicą właściciela)",
         "correct": false
       },
       {
-        "text": "służą wyłącznie do szyfrowania dysków twardych",
-        "inline_explanation": "(głównie służą do zabezpieczania komunikacji sieciowej i podpisu elektronicznego)",
+        "text": "służą wyłącznie do szyfrowania dysków twardych w systemach operacyjnych",
+        "inline_explanation": "(Fałsz. Choć mogą być do tego użyte, ich głównym standardem jest komunikacja sieciowa SSL/TLS i podpisy)",
         "correct": false
       },
       {
-        "text": "są generowane przez użytkownika i nie wymagają podpisu zaufanej trzeciej strony",
-        "inline_explanation": "(to tzw. Self-Signed Certificate, któremu przeglądarki domyślnie nie ufają)",
+        "text": "są ważne bezterminowo i nigdy nie wygasają",
+        "inline_explanation": "(Fałsz. Każdy certyfikat X.509 ma ściśle określone pole 'Not After' i po tej dacie staje się nieważny)",
         "correct": false
       },
       {
-        "text": "są tajne i nie mogą być udostępniane publicznie",
-        "inline_explanation": "(certyfikat jest z definicji publiczny - jak wizytówka)",
+        "text": "gwarantują bezpieczeństwo nawet w przypadku kradzieży klucza prywatnego",
+        "inline_explanation": "(Fałsz. Jeśli klucz prywatny wycieknie, certyfikat jest kompromitowany i musi zostać unieważniony na liście CRL)",
         "correct": false
       }
     ],
-    "explanation": "Certyfikat X.509 to cyfrowy dokument tożsamości. \n  \n Wiąże on **Klucz Publiczny** z **Tożsamością** (np. nazwą domeny `google.com`). Jest podpisany przez zaufany urząd (CA), co pozwala innym ufać, że ten klucz faktycznie należy do tej domeny."
+    "explanation": "Standard X.509 to uniwersalny format cyfrowego dokumentu tożsamości.\n\nChoć kojarzymy go głównie z zieloną kłódką w przeglądarce (SSL/TLS), jest on również kluczowy dla **podpisu cyfrowego**. Dzięki niemu, gdy podpisujesz dokument PDF, odbiorca może sprawdzić Twój certyfikat i mieć pewność: \"Tak, ten podpis złożył Jan Kowalski, a dokument nie został zmieniony\"."
   },
   {
     "id": 119,
-    "question": "Głównym zadaniem zapory sieciowej (Firewall) jest:",
+    "question": "Głównym przeznaczeniem zapory sieciowej (Firewall) jest:",
     "options": [
       {
         "text": "łączenie dwóch lub więcej odrębnych sieci ze sobą",
@@ -4094,131 +4124,131 @@
   },
   {
     "id": 120,
-    "question": "Uwierzytelnianie dwuskładnikowe (2FA) polega na:",
+    "question": "Co to jest uwierzytelnianie dwuskładnikowe lub dwuetapowe, znane również jako two-factor authentication (2FA)?",
     "options": [
       {
-        "text": "użyciu dwóch różnych haseł do jednego konta",
-        "inline_explanation": "(to nadal jeden składnik - \"coś, co wiesz\")",
+        "text": "Rodzaj ochrony kryptograficznej - szyfrowanie, które wymaga dwóch kluczy aby zapewnić poufność danych.",
+        "inline_explanation": "(Fałsz. To opis pasujący do szyfrowania asymetrycznego lub hybrydowego, a nie do procesu logowania użytkownika)",
         "correct": false
       },
       {
-        "text": "połączeniu dwóch różnych kategorii składników (np. hasło + kod SMS)",
-        "inline_explanation": "(Wiedza + Posiadanie)",
+        "text": "Metoda weryfikacji tożsamości wykorzystująca dwa składniki z różnych kategorii (np. hasło i kod SMS)",
+        "inline_explanation": "(Prawda. Łączy \"coś co wiesz\" z \"czymś co masz\")",
         "correct": true
       },
       {
-        "text": "logowaniu się tym samym hasłem do dwóch różnych serwisów",
-        "inline_explanation": "(to zła praktyka bezpieczeństwa, a nie 2FA)",
+        "text": "Wymóg ustawienia dwóch różnych haseł do tego samego konta w celu zwiększenia bezpieczeństwa",
+        "inline_explanation": "(Fałsz. Użycie dwóch haseł to nadal tylko jeden składnik - \"wiedza\". To nie jest 2FA)",
         "correct": false
       },
       {
-        "text": "szyfrowaniu danych dwoma różnymi kluczami",
-        "inline_explanation": "(to inna dziedzina kryptografii)",
+        "text": "Procedura wymagająca dwukrotnego wpisania hasła podczas logowania w celu uniknięcia literówek",
+        "inline_explanation": "(Fałsz. To tylko weryfikacja poprawności wpisywania)",
         "correct": false
       },
       {
-        "text": "konieczności wpisania hasła dwa razy",
-        "inline_explanation": "(to tylko potwierdzenie hasła, nie zwiększa bezpieczeństwa logowania)",
+        "text": "System pozwalający na jednoczesne logowanie do dwóch różnych serwisów",
+        "inline_explanation": "(Fałsz. To definicja Single Sign-On / SSO)",
         "correct": false
       }
     ],
-    "explanation": "Prawdziwe 2FA wymaga użycia składników z dwóch różnych grup: \n 1. **Coś, co wiesz** (hasło, PIN). \n 2. **Coś, co masz** (telefon, klucz YubiKey, karta). \n 3. **Coś, czym jesteś** (odcisk palca, skan twarzy). \n Hasło + PIN to nie jest 2FA (bo to dwa razy wiedza). Hasło + SMS to jest 2FA."
+    "explanation": "Uwierzytelnianie 2FA (Two-Factor Authentication) nie służy do szyfrowania danych, ale do **potwierdzania tożsamości**.\n\nKluczem jest użycie dwóch **różnych** kanałów/składników:\n1. Coś, co wiesz (Hasło).\n2. Coś, co masz (Telefon z kodem SMS, Token, YubiKey).\n\nSamo szyfrowanie to zupełnie inny proces matematyczny."
   },
   {
     "id": 121,
-    "question": "Jaka jest podstawowa różnica między połączeniem VPN (Virtual Private Network) a serwerem Proxy?",
+    "question": "Czym różnią się techniki określane jako client VPN oraz proxy server?",
     "options": [
       {
-        "text": "Serwer proxy tworzy w pełni zaszyfrowany tunel dla całego ruchu z systemu operacyjnego",
-        "inline_explanation": "(fałsz, proxy zazwyczaj nie szyfruje ruchu i działa tylko dla konkretnej aplikacji, np. przeglądarki)",
+        "text": "Serwer proxy tworzy zaszyfrowany tunel do przekierowywania ruchu, podczas gdy VPN jedynie ukrywa adres IP użytkownika",
+        "inline_explanation": "(Fałsz. Jest dokładnie odwrotnie: to VPN tworzy szyfrowany tunel dla całego ruchu, a Proxy często nie zapewnia szyfrowania)",
         "correct": false
       },
       {
-        "text": "VPN szyfruje cały ruch sieciowy wychodzący z urządzenia i działa na poziomie systemu (warstwa 3/4)",
-        "inline_explanation": "(tworzy wirtualny interfejs sieciowy, przez który przechodzi każdy pakiet)",
+        "text": "Client VPN szyfruje cały ruch sieciowy na poziomie systemu operacyjnego, natomiast serwer proxy działa zazwyczaj na poziomie aplikacji",
+        "inline_explanation": "(VPN to \"globalny pancerz\" dla całego komputera, a Proxy to \"maska\" zakładana tylko np. na przeglądarkę)",
         "correct": true
       },
       {
-        "text": "Proxy szyfruje ruch, a VPN jedynie ukrywa adres IP",
-        "inline_explanation": "(jest odwrotnie: VPN szyfruje, a zwykłe proxy HTTP często tylko przekazuje ruch)",
+        "text": "Techniki te są tożsame i nazwy te mogą być stosowane zamiennie",
+        "inline_explanation": "(Fałsz. Różnią się warstwą działania w modelu OSI oraz poziomem bezpieczeństwa)",
         "correct": false
       },
       {
-        "text": "Nie ma żadnej różnicy, to synonimy",
-        "inline_explanation": "(to dwie różne technologie o różnym poziomie izolacji)",
+        "text": "VPN służy wyłącznie do łączenia oddziałów firmy, a proxy wyłącznie do użytku domowego",
+        "inline_explanation": "(Fałsz. Client VPN jest powszechnie używany do ochrony prywatności konsumentów)",
         "correct": false
       },
       {
-        "text": "VPN działa tylko w przeglądarce internetowej",
-        "inline_explanation": "(fałsz, VPN obejmuje cały system, np. gry, aktualizacje, pocztę)",
+        "text": "Proxy wymaga instalacji sterownika wirtualnej karty sieciowej, a VPN konfiguruje się tylko w przeglądarce",
+        "inline_explanation": "(Fałsz. To VPN instaluje wirtualny interfejs sieciowy w systemie)",
         "correct": false
       }
     ],
-    "explanation": "Różnice: \n  \n ⚫ **VPN:** Szyfruje cały ruch z komputera (tunel). Dostawca internetu widzi tylko śmieci. \n ⚫ **Proxy:** Działa na poziomie aplikacji (np. Firefox). Zmienia Twój adres IP dla strony docelowej, ale często nie szyfruje transmisji (dostawca widzi, co robisz)."
+    "explanation": "Podstawowa różnica leży w **zakresie i szyfrowaniu**:\n\n1. **VPN (Virtual Private Network):** Przejmuje cały ruch z urządzenia (gry, system, przeglądarka), pakuje go w szyfrowany tunel. Gwarantuje prywatność i bezpieczeństwo.\n2. **Proxy:** Działa jako pośrednik (bramka). Zazwyczaj konfiguruje się go dla konkretnej aplikacji (np. tylko Firefox). Ukrywa IP, ale nie zawsze szyfruje dane."
   },
   {
     "id": 122,
-    "question": "W jaki sposób przetwarzane są reguły na listach sterowania dostępem (ACL - Access Control List) w routerach/firewallach?",
+    "question": "Zaznacz prawdziwe sformułowania. Listy sterowania dostępem (ACL):",
     "options": [
       {
-        "text": "Przeszukiwane są sekwencyjnie (od góry do dołu) do pierwszego dopasowania",
-        "inline_explanation": "(tzw. First Match Wins - jeśli pakiet pasuje do reguły nr 5, reguły 6, 7... są ignorowane)",
+        "text": "przeszukiwane są sekwencyjnie",
+        "inline_explanation": "(Prawda. Router przetwarza listę od góry do dołu i zatrzymuje się na pierwszym dopasowaniu)",
         "correct": true
       },
       {
-        "text": "Zawsze sprawdzane są wszystkie reguły, a decyzja podejmowana jest na końcu",
-        "inline_explanation": "(nie, to byłoby nieefektywne; decyzja zapada przy pierwszym trafieniu)",
+        "text": "wykonują wszystkie pasujące reguły z listy dla danego pakietu",
+        "inline_explanation": "(Fałsz. Wykonywana jest tylko pierwsza pasująca reguła, reszta jest ignorowana)",
         "correct": false
       },
       {
-        "text": "Są przeszukiwane losowo w celu rozłożenia obciążenia",
-        "inline_explanation": "(nie deterministycznie)",
+        "text": "domyślnie przepuszczają cały ruch, jeśli nie znaleziono pasującej reguły",
+        "inline_explanation": "(Fałsz. Standardem bezpieczeństwa jest 'Implicit Deny' - co nie jest dozwolone, jest zabronione)",
         "correct": false
       },
       {
-        "text": "Kolejność reguł nie ma znaczenia",
-        "inline_explanation": "(ma kluczowe znaczenie; ogólna reguła \"blokuj wszystko\" na początku zablokuje dostęp, nawet jeśli potem na liście jest \"pozwól Janowi\")",
+        "text": "służą wyłącznie do uwierzytelniania użytkowników hasłem",
+        "inline_explanation": "(Fałsz. ACL filtrują ruch sieciowy na podstawie adresów IP i portów, a nie tożsamości użytkownika)",
         "correct": false
       },
       {
-        "text": "Domyślnie na końcu listy znajduje się ukryta reguła \"Pozwól na wszystko\" (Implicit Permit)",
-        "inline_explanation": "(jest odwrotnie: Implicit Deny - co nie jest dozwolone, jest zabronione)",
+        "text": "są przetwarzane w kolejności losowej",
+        "inline_explanation": "(Fałsz. Kolejność wpisów jest kluczowa - ogólne reguły nie mogą zasłaniać tych bardziej szczegółowych)",
         "correct": false
       }
     ],
-    "explanation": "ACL działają według logiki **First Match Wins**: \n  \n 1. Router sprawdza regułę nr 1. Pasuje? Wykonaj akcję i koniec. \n 2. Nie pasuje? Sprawdź regułę nr 2. \n 3. ... \n 4. Jeśli żadna nie pasuje, zadziała ukryta reguła ostatnia: **Deny All**."
+    "explanation": "Listy ACL (Access Control Lists) działają według zasady **First Match Wins** (Pierwsze trafienie wygrywa).\n\nRouter bierze pakiet i przykłada go do linijki nr 1. Pasuje? Wykonuje akcję (np. DENY) i kończy pracę. Nie pasuje? Idzie do linijki nr 2. \nJeśli dojdzie do końca listy i nic nie pasuje, stosowana jest ukryta reguła **Deny All** (odrzuć wszystko)."
   },
   {
     "id": 123,
-    "question": "Który z wymienionych protokołów **NIE** wchodzi w skład pakietu IPsec (Internet Protocol Security)?",
+    "question": "Który z wymienionych protokołów nie jest wykorzystywany w rozwiązaniach opartych na IPSec?",
     "options": [
       {
-        "text": "SSL (Secure Sockets Layer)",
-        "inline_explanation": "(to konkurencyjna technologia działająca w warstwie aplikacji/sesji, np. w HTTPS)",
+        "text": "SSL",
+        "inline_explanation": "(To poprawna odpowiedź, ponieważ SSL/TLS to konkurencyjna technologia działająca w wyższej warstwie, np. w przeglądarkach, a nie w IPsec)",
         "correct": true
       },
       {
-        "text": "AH (Authentication Header)",
-        "inline_explanation": "(zapewnia integralność i uwierzytelnianie pakietu, ale nie szyfruje danych)",
+        "text": "AH",
+        "inline_explanation": "(To integralna część IPsec zapewniająca uwierzytelnianie pakietów)",
         "correct": false
       },
       {
-        "text": "ESP (Encapsulating Security Payload)",
-        "inline_explanation": "(zapewnia szyfrowanie, integralność i uwierzytelnianie)",
+        "text": "ESP",
+        "inline_explanation": "(To główny protokół IPsec odpowiedzialny za szyfrowanie danych)",
         "correct": false
       },
       {
-        "text": "IKE (Internet Key Exchange)",
-        "inline_explanation": "(służy do negocjacji parametrów i wymiany kluczy w IPsec)",
+        "text": "IKE",
+        "inline_explanation": "(To mechanizm negocjacji kluczy używany do zestawienia tunelu IPsec)",
         "correct": false
       },
       {
-        "text": "IKEv2",
-        "inline_explanation": "(nowsza wersja protokołu wymiany kluczy IPsec, obsługująca mobilność)",
+        "text": "ISAKMP",
+        "inline_explanation": "(To framework zarządzania asocjacjami bezpieczeństwa, na którym opiera się IKE w IPsec)",
         "correct": false
       }
     ],
-    "explanation": "IPsec to zestaw protokołów warstwy sieciowej (Layer 3): **AH**, **ESP** i **IKE**. \n SSL (i jego następca TLS) to zupełnie inna technologia, działająca wyżej (Layer 4/7), używana do zabezpieczania stron WWW i aplikacji."
+    "explanation": "Architektura **IPsec** (Internet Protocol Security) działa w Warstwie 3 (Sieci) i składa się z trzech filarów: \n1. **AH** (Uwierzytelnianie nagłówka).\n2. **ESP** (Szyfrowanie ładunku).\n3. **IKE/ISAKMP** (Wymiana kluczy).\n\n**SSL** (Secure Sockets Layer) to technologia działająca wyżej (Warstwa 4/7), używana w rozwiązaniach typu SSL VPN (Clientless) lub HTTPS, co stanowi alternatywę dla IPsec."
   },
   {
     "id": 124,
@@ -4254,99 +4284,99 @@
   },
   {
     "id": 125,
-    "question": "Jako inżynier bezpieczeństwa w chmurze wykryłeś, że klucz dostępu (Access Key) pracownika został upubliczniony na GitHubie. Jaka jest prawidłowa pierwsza reakcja?",
+    "question": "Jako inżynier bezpieczeństwa infrastruktury uruchomionej w chmurze publicznej, zostałeś poinformowany, że klucz dostępu użytkownika został upubliczniony. Co musisz zrobić żeby ten klucz nie mógł być więcej używany. Dodatkowo należy uruchomić mechanizm, który pozwoli sprawdzić czy klucz został użyty do wykonania złośliwych działań. Jak to zrobić:",
     "options": [
       {
-        "text": "Natychmiast usuń całe konto użytkownika z systemu",
-        "inline_explanation": "(zbyt radykalne; utrudni śledztwo i zablokuje pracownikowi dostęp do innych narzędzi)",
+        "text": "Usuń użytkownika, przeanalizuj pliki logów zebrane we wszystkich regionach i przygotuj raport z nadużycia",
+        "inline_explanation": "(To błąd. Usunięcie konta utrudnia analizę śledczą - tracisz informacje o przypisanych politykach i uprawnieniach. Należy celować w klucz, a nie w tożsamość użytkownika)",
         "correct": false
       },
       {
-        "text": "Dezaktywuj (lub usuń) skompromitowany klucz i rozpocznij analizę logów",
-        "inline_explanation": "(odcięcie dostępu atakującemu to priorytet, a logi pozwolą ocenić szkody)",
+        "text": "Unieważnij (dezaktywuj) skompromitowany klucz dostępu oraz wykorzystaj usługę audytową (np. AWS CloudTrail) do analizy historii wywołań API",
+        "inline_explanation": "(To jedyna poprawna procedura: natychmiastowe odcięcie dostępu poprzez dezaktywację klucza i analiza logów w celu oceny szkód)",
         "correct": true
       },
       {
-        "text": "Zignoruj zdarzenie, klucze wygasają same po 24 godzinach",
-        "inline_explanation": "(klucze API zazwyczaj są ważne bezterminowo, dopóki się ich nie rotuje)",
+        "text": "Zmień hasło do konsoli zarządzania dla tego użytkownika i zrestartuj wirtualne maszyny",
+        "inline_explanation": "(Klucze dostępu API działają niezależnie od hasła do konsoli, więc zmiana hasła nie zatrzyma ataku z użyciem klucza)",
         "correct": false
       },
       {
-        "text": "Zmień hasło do konsoli webowej tego użytkownika",
-        "inline_explanation": "(nie pomoże, bo atakujący ma klucz API, który działa niezależnie od hasła do konsoli)",
+        "text": "Skonfiguruj listę ACL, aby blokowała wszystkie adresy IP spoza sieci firmowej",
+        "inline_explanation": "(Klucze API są często używane przez systemy zewnętrzne, a blokada IP może nie zadziałać, jeśli atakujący używa zmiennych adresów)",
         "correct": false
       },
       {
-        "text": "Wyślij e-mail do GitHuba z prośbą o usunięcie repozytorium",
-        "inline_explanation": "(zanim zareagują, miną godziny; klucz trzeba unieważnić w sekundy)",
+        "text": "Zignoruj zdarzenie, ponieważ klucze dostępu są automatycznie rotowane co 24 godziny",
+        "inline_explanation": "(Fałsz. W większości chmur klucze dostępu są ważne bezterminowo, dopóki nie zostaną ręcznie wyłączone)",
         "correct": false
       }
     ],
-    "explanation": "Procedura **Incident Response** przy wycieku poświadczeń: \n 1. **Containment (Powstrzymanie):** Unieważnij (Revoke) wyciekły klucz. \n 2. **Analysis (Analiza):** Sprawdź w logach (np. CloudTrail), czy ktoś użył tego klucza i co zrobił (np. czy uruchomił koparki krypto). \n 3. **Remediation (Naprawa):** Cofnij nieautoryzowane zmiany. \n 4. **Rotation:** Wygeneruj nowy klucz dla pracownika."
+    "explanation": "Prawidłowa ścieżka **Incident Response** w chmurze:\n1. **Powstrzymanie:** Nie usuwaj konta! Zamiast tego **dezaktywuj (Deactivate/Revoke)** wyciekły klucz Access Key. To natychmiast odcina atakującego, ale zachowuje konto do analizy.\n2. **Analiza:** Uruchom analizę logów (np. **CloudTrail** w AWS), aby zobaczyć, co atakujący zrobił przy użyciu tego klucza (np. czy utworzył nowe instancje do kopania kryptowalut)."
   },
   {
     "id": 126,
-    "question": "W modelu współdzielonej odpowiedzialności (Shared Responsibility Model) w chmurze typu IaaS (np. Amazon EC2), za które elementy odpowiada KLIENT?",
+    "question": "W odniesieniu do modelu współdzielonej odpowiedzialności za bezpieczeństwo w chmurze publicznej, zaznacz komponenty, których bezpieczeństwo leży w gestii użytkownika chmury:",
     "options": [
       {
-        "text": "Fizyczne zabezpieczenie serwerowni i zasilanie",
-        "inline_explanation": "(to domena dostawcy chmury - AWS/Azure/Google)",
-        "correct": false
-      },
-      {
-        "text": "Ochrona warstwy wirtualizacji (Hypervisor) przed atakami sprzętowymi",
-        "inline_explanation": "(za bezpieczeństwo \"samej chmury\" odpowiada dostawca)",
-        "correct": false
-      },
-      {
-        "text": "Aktualizacja i łatanie systemu operacyjnego gościa (Guest OS) oraz aplikacji",
-        "inline_explanation": "(dostawca daje tylko wirtualną maszynę, klient musi dbać o to, co w niej zainstaluje)",
+        "text": "Aktualizacja systemów operacyjnych",
+        "inline_explanation": "(Prawda w modelu IaaS. Dostawca zapewnia sprzęt, ale to klient musi instalować łatki bezpieczeństwa w swoim Windows/Linux)",
         "correct": true
       },
       {
-        "text": "Wymiana uszkodzonych dysków twardych w macierzach",
-        "inline_explanation": "(to warstwa fizyczna, klient nawet nie wie, gdzie ten dysk jest)",
+        "text": "Fizyczna ochrona serwerowni i kontrola dostępu do budynku",
+        "inline_explanation": "(Fałsz. To zawsze leży po stronie dostawcy chmury - 'Security OF the Cloud')",
         "correct": false
       },
       {
-        "text": "Zapewnienie łączności sieciowej między regionami chmury (Backbone)",
-        "inline_explanation": "(to infrastruktura globalna dostawcy)",
+        "text": "Wymiana uszkodzonych podzespołów sprzętowych (dysków, zasilaczy)",
+        "inline_explanation": "(Fałsz. Klient nie ma fizycznego dostępu do infrastruktury)",
         "correct": false
+      },
+      {
+        "text": "Zarządzanie warstwą wirtualizacji (Hypervisor)",
+        "inline_explanation": "(Fałsz. Izolacja między maszynami wirtualnymi to odpowiedzialność dostawcy)",
+        "correct": false
+      },
+      {
+        "text": "Zarządzanie tożsamością, dostępem (IAM) oraz szyfrowaniem danych",
+        "inline_explanation": "(Prawda. To klient decyduje, kto ma dostęp do danych i czy są one zaszyfrowane)",
+        "correct": true
       }
     ],
-    "explanation": "Model ten dzieli obowiązki: \n  \n ⚫ **Dostawca:** Odpowiada za bezpieczeństwo **CHMURY** (fizyka, prąd, sieć, hosty). \n ⚫ **Klient:** Odpowiada za bezpieczeństwo **W CHMURZE** (dane, systemy operacyjne, konfiguracja firewalli, szyfrowanie)."
+    "explanation": "Model współdzielonej odpowiedzialności dzieli zadania na dwie grupy:\n\n1. **Dostawca (AWS/Azure/GCP):** Odpowiada za bezpieczeństwo **SAMEJ CHMURY** (budynki, prąd, kable, serwery fizyczne, hypervisor).\n2. **Klient (Ty):** Odpowiada za bezpieczeństwo **W CHMURZE** (aktualizacja systemu operacyjnego, konfiguracja Firewalla, szyfrowanie danych, zarządzanie kontami użytkowników)."
   },
   {
     "id": 127,
-    "question": "Systemy Wysokiej Dostępności (High Availability - HA) charakteryzują się:",
+    "question": "Wysoka dostępność HA (High Availability) charakteryzuje systemy:",
     "options": [
       {
-        "text": "brakiem pojedynczych punktów awarii (SPOF - Single Point of Failure)",
-        "inline_explanation": "(to kluczowa cecha; np. dwa zasilacze, dwa serwery, dwie drogi sieciowe)",
+        "text": "dla których zadowalający czas pracy operacyjnej przekracza 90%",
+        "inline_explanation": "(Fałsz. 90% dostępności to ponad miesiąc przestoju w roku. HA celuje w 99,9% i więcej)",
+        "correct": false
+      },
+      {
+        "text": "zaprojektowane w celu zminimalizowania czasu przestoju (downtime) poprzez zastosowanie nadmiarowości (redundancji)",
+        "inline_explanation": "(Prawda. Kluczem jest dublowanie elementów, aby awaria jednego nie zatrzymała całego systemu)",
         "correct": true
       },
       {
-        "text": "gwarancją dostępności na poziomie 90%",
-        "inline_explanation": "(90% to ponad miesiąc przestoju rocznie; HA celuje w 99.9% i więcej)",
+        "text": "które gwarantują 100% bezpieczeństwo danych przed atakami hakerskimi",
+        "inline_explanation": "(Fałsz. Dostępność to nie to samo co poufność czy integralność; system HA może nadal zostać zhakowany)",
         "correct": false
       },
       {
-        "text": "koniecznością cotygodniowego wyłączania w celu konserwacji",
-        "inline_explanation": "(HA ma działać ciągle; konserwacja odbywa się na jednym węźle, gdy drugi pracuje)",
+        "text": "posiadające pojedynczy punkt awarii (SPOF) w celu oszczędności kosztów",
+        "inline_explanation": "(Fałsz. HA polega właśnie na eliminacji Single Point of Failure)",
         "correct": false
       },
       {
-        "text": "wykorzystaniem wyłącznie jednego, potężnego superkomputera",
-        "inline_explanation": "(nawet superkomputer może się zepsuć; HA wymaga redundancji/klastra)",
-        "correct": false
-      },
-      {
-        "text": "brakiem konieczności robienia kopii zapasowych",
-        "inline_explanation": "(HA to nie backup; awaria logiczna - np. usunięcie danych - replikuje się na obu węzłach)",
-        "correct": false
+        "text": "działające w trybie klastra (np. Active-Passive lub Active-Active)",
+        "inline_explanation": "(Prawda. Klastrowanie to najczęstsza metoda osiągania wysokiej dostępności)",
+        "correct": true
       }
     ],
-    "explanation": "Wysoka Dostępność (HA) to projektowanie systemów tak, aby zminimalizować przestoje. \n  \n Osiąga się to poprzez **redundancję** (nadmiarowość). Jeśli jeden serwer padnie, drugi przejmuje jego zadania (Failover). Kluczowe jest wyeliminowanie **SPOF**."
+    "explanation": "High Availability (HA) to systemy zaprojektowane tak, aby działały niemal bez przerwy.\n\nMatematyka dostępności:\n* **90% (jedna dziewiątka):** 36,5 dnia przestoju rocznie (Brak HA).\n* **99% (dwie dziewiątki):** 3,65 dnia przestoju rocznie.\n* **99,9% (trzy dziewiątki):** 8 godzin przestoju rocznie (Podstawowe HA).\n* **99,999% (pięć dziewiątek):** 5 minut przestoju rocznie (Standard telekomunikacyjny/bankowy)."
   },
   {
     "id": 128,
@@ -4382,7 +4412,7 @@
   },
   {
     "id": 129,
-    "question": "W kontekście szyfrowania danych przesyłanych do chmury publicznej (Encryption in Transit), prawdą jest, że:",
+    "question": "Które zdania na temat szyfrowania danych przesyłanych przez sieć w celu przechowywania ich w chmurze publicznej są prawdziwe?",
     "options": [
       {
         "text": "Szyfrowanie jest możliwe tylko przy użyciu kluczy dostarczonych przez operatora chmury",
@@ -4414,42 +4444,42 @@
   },
   {
     "id": 130,
-    "question": "W chmurowym magazynie obiektowym (Object Storage, np. S3), funkcja Wersjonowania (Versioning):",
+    "question": "Zaznacz prawdziwe zdania dotyczące obiektowego przechowywania danych w chmurze publicznej:",
     "options": [
       {
-        "text": "Jest niemożliwa do włączenia ze względów bezpieczeństwa",
-        "inline_explanation": "(jest dostępna i zalecana)",
+        "text": "Ze względów bezpieczeństwa nie ma możliwości przechowywania wielu wersji tych samych obiektów",
+        "inline_explanation": "(Fałsz. Jest wręcz przeciwnie – mechanizm Versioning pozwala przechowywać historię zmian pliku, co chroni przed ransomware i przypadkowym usunięciem)",
         "correct": false
       },
       {
-        "text": "Pozwala na przechowywanie i odzyskiwanie wielu wariantów tego samego obiektu",
-        "inline_explanation": "(chroni przed przypadkowym nadpisaniem lub usunięciem danych)",
+        "text": "Dane przechowywane są w płaskiej strukturze (tzw. buckets/kontenery) i identyfikowane unikalnym kluczem, a nie w hierarchii katalogów",
+        "inline_explanation": "(Prawda. W Object Storage nie ma fizycznych folderów, są tylko kontenery i obiekty)",
         "correct": true
       },
       {
-        "text": "Służy do instalowania systemów operacyjnych",
-        "inline_explanation": "(do tego służy Block Storage, a nie Object Storage)",
+        "text": "Jest to rozwiązanie optymalizowane pod kątem instalacji systemów operacyjnych i baz danych",
+        "inline_explanation": "(Fałsz. Do systemów operacyjnych używa się Block Storage. Object Storage ma zbyt duże opóźnienia)",
         "correct": false
       },
       {
-        "text": "Zmniejsza koszty przechowywania danych",
-        "inline_explanation": "(zwiększa, bo przechowujemy każdą wersję pliku, zajmując więcej miejsca)",
-        "correct": false
+        "text": "Obiekty są zazwyczaj niezmienne (immutable) – edycja pliku wymaga nadpisania go w całości nową wersją",
+        "inline_explanation": "(Prawda. Nie można edytować jednego bajtu w środku pliku na S3; trzeba wysłać cały plik od nowa)",
+        "correct": true
       },
       {
-        "text": "Automatycznie szyfruje dane publiczne",
-        "inline_explanation": "(wersjonowanie nie ma związku z szyfrowaniem ani uprawnieniami publicznymi)",
-        "correct": false
+        "text": "Pozwala na przechowywanie ogromnych ilości nieustrukturyzowanych danych (np. zdjęcia, filmy, backupy) przy niskich kosztach",
+        "inline_explanation": "(Prawda. To główne zastosowanie tej technologii)",
+        "correct": true
       }
     ],
-    "explanation": "Wersjonowanie w Object Storage działa jak \"Time Machine\". Jeśli nadpiszesz plik `raport.docx` nową wersją (nawet pustą lub zaszyfrowaną przez wirusa), chmura zachowa starą wersję w historii. Możesz ją w każdej chwili przywrócić. To kluczowa ochrona przed błędem ludzkim i ransomware."
+    "explanation": "Magazyn Obiektowy (np. AWS S3, Azure Blob) to nie to samo co dysk twardy.\n\n1. **Wersjonowanie:** Możesz mieć plik `raport.pdf` w wersji 1, 2 i 3. Jeśli usuniesz go 'permanentnie', wciąż możesz odzyskać starą wersję (jeśli funkcja jest włączona).\n2. **Struktura:** Nie ma tu systemu plików (NTFS/ext4). Każdy plik to 'Obiekt' z metadanymi, wrzucony do wielkiego worka zwanego 'Bucket'."
   },
   {
     "id": 131,
-    "question": "Które zdanie dotyczące bezpieczeństwa baz danych w chmurze (np. usługa RDS, Azure SQL) jest PRAWDZIWE?",
+    "question": "Zaznacz prawdziwe zdania dotyczące bezpieczeństwa baz danych powoływanych w chmurze publicznej:",
     "options": [
       {
-        "text": "Korzystanie z usługi zarządzanej zwalnia użytkownika z obowiązku zabezpieczania dostępu do danych",
+        "text": "Korzystanie z usługi baz danych świadczonej przez operatora chmury zwalnia użytkownika z obowiązku zabezpieczania bazy danych zgodnie z modelem współdzielonej odpowiedzialności",
         "inline_explanation": "(fałsz, dostawca dba o infrastrukturę, ale to klient decyduje, kto ma hasło do bazy)",
         "correct": false
       },
@@ -4478,10 +4508,10 @@
   },
   {
     "id": 132,
-    "question": "Ze względów bezpieczeństwa, sieć zarządzająca (Management Network) i sieć produkcyjna (Production Network) w wirtualnym centrum danych powinny być:",
+    "question": "Ze względów bezpieczeństwa, sieć zarządzająca i sieć produkcyjna w środowisku zwirtualizowanym powinny być:",
     "options": [
       {
-        "text": "połączone w jedną wspólną sieć dla ułatwienia komunikacji",
+        "text": "połączone w jedną wspólną sieć tak aby ramki rozgłaszane mogły dotrzeć do każdej karty sieciowej w obrębie Centrum Danych",
         "inline_explanation": "(to błąd krytyczny; atak na publiczną aplikację webową dałby atakującemu dostęp do paneli administracyjnych)",
         "correct": false
       },
@@ -4510,10 +4540,10 @@
   },
   {
     "id": 133,
-    "question": "Migracja maszyn wirtualnych na żywo (np. vMotion, Live Migration) jest automatycznie inicjowana przez systemy klastrowe zazwyczaj w sytuacji:",
+    "question": "Migracja maszyn wirtualnych na żywo jest wykonywana w sytuacji:",
     "options": [
       {
-        "text": "przeciążenia jednego z serwerów fizycznych (Load Balancing / DRS)",
+        "text": "przeciążenia serwera (hosta) wirtualizacyjnego",
         "inline_explanation": "(maszyny są przenoszone na mniej obciążone hosty, by wyrównać wydajność)",
         "correct": true
       },
@@ -4542,260 +4572,451 @@
   },
   {
     "id": 134,
-    "question": "W modelu IaaS (Infrastructure as a Service) chmury publicznej, za co odpowiada KLIENT?",
+    "question": "Zaznacz zdania prawdziwe dotyczące bezpieczeństwa maszyn wirtualnych powoływanych w chmurze publicznej:",
     "options": [
       {
-        "text": "Za fizyczną utylizację uszkodzonych dysków twardych",
-        "inline_explanation": "(to zadanie operatora chmury)",
+        "text": "Odpowiedzialnością klienta usług chmurowych jest odpowiednia konfiguracja mechanizmów bezpieczeństwa na poziomie nadzorcy wirtualizacji (hypervisor)",
+        "inline_explanation": "(Fałsz. Hypervisor jest zarządzany wyłącznie przez dostawcę chmury - to Security OF the Cloud. Klient nie ma do niego dostępu)",
         "correct": false
       },
       {
-        "text": "Za zabezpieczenie i aktualizację systemu operacyjnego gościa (Guest OS)",
-        "inline_explanation": "(klient dostaje \"czystą\" maszynę i sam musi dbać o to, co jest w środku)",
+        "text": "Klient ponosi pełną odpowiedzialność za aktualizację i łatanie systemu operacyjnego (Guest OS) zainstalowanego na maszynie",
+        "inline_explanation": "(Prawda. W modelu IaaS dostawca daje 'czysty' system, a dbanie o łatki to zadanie klienta)",
         "correct": true
       },
       {
-        "text": "Za konfigurację sprzętowych firewalli brzegowych w serwerowni",
-        "inline_explanation": "(klient konfiguruje tylko wirtualne Security Groups, nie ma dostępu do sprzętu)",
+        "text": "Domyślnie dostawca chmury tworzy kopie zapasowe danych wewnątrz maszyny wirtualnej",
+        "inline_explanation": "(Fałsz. Backup danych i konfiguracja snapshotów leży w gestii klienta; dostawca dba tylko o trwałość samej infrastruktury)",
         "correct": false
       },
       {
-        "text": "Za ochronę fizyczną budynku data center",
-        "inline_explanation": "(znowu: domena operatora)",
-        "correct": false
+        "text": "Należy skonfigurować sieciowe grupy bezpieczeństwa (Security Groups), aby ograniczyć ruch przychodzący tylko do niezbędnych portów",
+        "inline_explanation": "(Prawda. To wirtualny firewall przed maszyną, za którego konfigurację odpowiada klient)",
+        "correct": true
       },
       {
-        "text": "Za patchowanie hiperwizora",
-        "inline_explanation": "(to warstwa infrastruktury, zarządza nią dostawca)",
+        "text": "Dostawca chmury automatycznie szyfruje wszystkie dane w pamięci RAM maszyny wirtualnej klienta",
+        "inline_explanation": "(Fałsz. Choć istnieją technologie Confidential Computing, standardowo pamięć RAM jest w stanie jawnym dla procesora, a szyfrowanie spoczynkowe dotyczy dysków)",
         "correct": false
       }
     ],
-    "explanation": "Podział ról w IaaS: \n ⚫ **Operator:** Daje prąd, budynek, sprzęt i wirtualizację. \n ⚫ **Klient:** Bierze wirtualną maszynę i odpowiada za wszystko od poziomu systemu operacyjnego w górę (aplikacje, dane, antywirus, firewall systemowy)."
+    "explanation": "Bezpieczeństwo maszyny wirtualnej (EC2/VM) w chmurze dzieli się grubą kreską:\n\n1. **Podłoga (Dostawca):** Sprzęt, prąd, kable i **Hypervisor**. Ty tego nie dotykasz.\n2. **Meble (Ty):** System operacyjny (Windows/Linux), Firewall, Aplikacje, Dane. Jeśli zostawisz otwarte drzwi (porty) lub nie zaktualizujesz Windowsa, włamanie jest Twoją winą."
   },
   {
     "id": 135,
-    "question": "Dlaczego należy ograniczać dostęp do metadanych maszyny wirtualnej (Instance Metadata Service) w chmurze?",
+    "question": "Ograniczanie, przez klienta chmury publicznej, dostępu do metadanych maszyny wirtualnej procesom systemu operacyjnego:",
     "options": [
       {
-        "text": "Ponieważ zużywa to zbyt dużo transferu sieciowego",
-        "inline_explanation": "(metadane to znikome ilości tekstu, nie ma to wpływu na koszt)",
+        "text": "Nie jest konieczne, ponieważ to operator chmury jest odpowiedzialny za metadane maszyn wirtualnych.",
+        "inline_explanation": "(Fałsz. Operator udostępnia usługę metadanych dla wygody, ale to klient odpowiada za to, czy jego aplikacja nie udostępni tych danych hakerowi)",
         "correct": false
       },
       {
-        "text": "Aby zapobiec kradzieży tymczasowych poświadczeń (kluczy IAM) w przypadku ataku SSRF",
-        "inline_explanation": "(Server-Side Request Forgery pozwala atakującemu \"poprosić\" serwer o wyświetlenie jego własnych haseł)",
+        "text": "Jest kluczowe dla ochrony przed atakami typu SSRF (Server-Side Request Forgery), które mogą doprowadzić do kradzieży poświadczeń IAM",
+        "inline_explanation": "(Prawda. W metadanych często znajdują się tymczasowe klucze dostępu dla roli przypisanej do maszyny)",
         "correct": true
       },
       {
-        "text": "Ponieważ metadane są publicznie dostępne w Internecie",
-        "inline_explanation": "(są dostępne tylko z wnętrza maszyny pod adresem link-local 169.254.169.254)",
+        "text": "Można zrealizować poprzez wymuszenie autoryzacji tokenem (np. IMDSv2 w AWS) lub reguły lokalnego firewalla (iptables)",
+        "inline_explanation": "(Prawda. Nowsze standardy wymagają pobrania tokenu sesji, co utrudnia proste ataki SSRF)",
+        "correct": true
+      },
+      {
+        "text": "Spowoduje całkowite odcięcie maszyny wirtualnej od Internetu",
+        "inline_explanation": "(Fałsz. Serwis metadanych działa na adresie lokalnym Link-Local 169.254.169.254 i jest niezależny od wyjścia na świat)",
         "correct": false
       },
       {
-        "text": "Jest to niemożliwe, metadane muszą być zawsze otwarte dla wszystkich procesów",
-        "inline_explanation": "(można i trzeba to ograniczać, np. wymuszając IMDSv2 z tokenami sesji)",
-        "correct": false
-      },
-      {
-        "text": "Ponieważ spowalnia to uruchamianie systemu",
-        "inline_explanation": "(nie ma wpływu na boot time)",
+        "text": "Jest niemożliwe, ponieważ system operacyjny przestanie się bootować",
+        "inline_explanation": "(Fałsz. System operacyjny działa poprawnie bez dostępu do metadanych po zakończeniu wstępnej inicjalizacji)",
         "correct": false
       }
     ],
-    "explanation": "Usługa metadanych (pod adresem `169.254.169.254`) to \"dowód tożsamości\" maszyny w chmurze. Często zawiera klucze dostępowe do innych usług (np. S3). \n  \n Jeśli aplikacja ma lukę **SSRF**, haker może zmusić ją do odczytania tych kluczy i przejęcia kontroli nad chmurą. Dlatego dostęp ten trzeba zabezpieczać (np. tokenami)."
+    "explanation": "Każda maszyna w chmurze ma dostęp do 'magicznego' adresu IP (zazwyczaj `169.254.169.254`), pod którym serwowane są **Instance Metadata**.\n\nMożna tam znaleźć:\n1. Adres IP maszyny.\n2. Nazwę hosta.\n3. **Klucze dostępowe (Credentials)** do innych usług chmurowych!\n\nJeśli Twoja aplikacja ma lukę (SSRF) i haker zmusi ją do odczytania tego adresu, ukradnie tożsamość Twojej maszyny. Dlatego ograniczenie tego dostępu (lub wymuszenie IMDSv2) to obowiązek klienta."
   },
   {
     "id": 136,
-    "question": "Który z poniższych mechanizmów w środowisku zwirtualizowanym służy przede wszystkim do zapewnienia ciągłości działania (Business Continuity) w przypadku awarii sprzętowej?",
+    "question": "Bezpieczeństwo danych w środowisku zwirtualizowanym zapewniają mechanizmy:",
     "options": [
       {
-        "text": "Szyfrowanie dysków wirtualnych",
-        "inline_explanation": "(zapewnia poufność danych w spoczynku, ale nie chroni przed awarią)",
-        "correct": false
-      },
-      {
-        "text": "Replikacja danych do innej lokalizacji (np. Data Center zapasowego)",
-        "inline_explanation": "(pozwala na szybkie uruchomienie systemów w zapasowej lokalizacji - Disaster Recovery)",
+        "text": "replikacji danych",
+        "inline_explanation": "(Prawda. Utrzymywanie kopii danych w wielu lokalizacjach chroni przed ich utratą w wyniku awarii sprzętu - realizuje postulat Dostępności)",
         "correct": true
       },
       {
-        "text": "Publiczne udostępnianie katalogów bez hasła",
-        "inline_explanation": "(to luka bezpieczeństwa, a nie mechanizm ochronny)",
+        "text": "izolacji logicznej maszyn wirtualnych",
+        "inline_explanation": "(Prawda. Hypervisor musi gwarantować, że jedna maszyna nie może odczytać pamięci RAM ani dysku innej maszyny)",
+        "correct": true
+      },
+      {
+        "text": "szyfrowania wolumenów wirtualnych (Data at Rest)",
+        "inline_explanation": "(Prawda. Jeśli ktoś ukradnie fizyczny dysk z serwerowni, dane pozostaną nieczytelne bez klucza)",
+        "correct": true
+      },
+      {
+        "text": "współdzielenia schowka (clipboard sharing) pomiędzy gospodarzem a gościem",
+        "inline_explanation": "(Fałsz. To funkcja wygody, która często jest wyłączana w bezpiecznych środowiskach, bo zwiększa ryzyko wycieku danych)",
         "correct": false
       },
       {
-        "text": "Kompresja pamięci RAM",
-        "inline_explanation": "(optymalizuje wydajność, ale nie chroni przed utratą danych)",
-        "correct": false
-      },
-      {
-        "text": "Izolacja procesów w kontenerach",
-        "inline_explanation": "(zwiększa bezpieczeństwo aplikacji, ale awaria serwera nadal kładzie kontener)",
+        "text": "publicznego udostępniania snapshotów dysków",
+        "inline_explanation": "(Fałsz. To prosta droga do wycieku wrażliwych danych zawartych w obrazie systemu)",
         "correct": false
       }
     ],
-    "explanation": "Bezpieczeństwo to nie tylko ochrona przed hakerem, ale też przed awarią (Dostępność). \n  \n **Replikacja** kopiuje dane w czasie rzeczywistym lub cyklicznie do innej macierzy/ośrodka. W razie pożaru głównej serwerowni, systemy wstają w zapasowej."
+    "explanation": "Bezpieczeństwo danych w chmurze/wirtualizacji opiera się na trzech filarach (CIA):\n1. **Poufność:** Izolacja i Szyfrowanie (nikt nie podgląda).\n2. **Integralność:** Sumy kontrolne i Snapshoty (nikt nie zmienia).\n3. **Dostępność:** **Replikacja** (gdy jeden dysk padnie, dane są bezpieczne na drugim). Replikacja to nie to samo co backup, ale jest kluczowa dla ciągłości działania."
   },
   {
     "id": 137,
-    "question": "Uwierzytelnianie użytkowników w chmurze publicznej przy użyciu istniejących kont firmowych (np. Active Directory on-premise) jest możliwe dzięki:",
+    "question": "Uwierzytelnianie użytkowników chmury publicznej może odbywać się:",
     "options": [
       {
-        "text": "Wyłącznie ręcznemu kopiowaniu haseł do chmury",
-        "inline_explanation": "(nieefektywne i niebezpieczne)",
+        "text": "Wyłącznie na podstawie klucza nadanego przez operatora.",
+        "inline_explanation": "(Fałsz. Słowo 'wyłącznie' dyskwalifikuje tę odpowiedź. Chmury wspierają hasła, MFA, SSO, certyfikaty i wiele innych metod)",
         "correct": false
       },
       {
-        "text": "Federacji tożsamości (Identity Federation) z użyciem protokołów takich jak SAML 2.0",
-        "inline_explanation": "(umożliwia logowanie do chmury poświadczeniami z lokalnego AD - Single Sign-On)",
+        "text": "W oparciu o federację tożsamości (Identity Federation), wykorzystując istniejące konta firmowe (np. z Active Directory)",
+        "inline_explanation": "(Prawda. Dzięki temu pracownik nie musi zapamiętywać nowego hasła, loguje się kontem domenowym)",
         "correct": true
       },
       {
-        "text": "Użyciu wyłącznie kluczy API generowanych przez operatora",
-        "inline_explanation": "(klucze API są dla aplikacji/skryptów, a nie dla ludzi logujących się do konsoli)",
+        "text": "Przy użyciu uwierzytelniania wieloskładnikowego (MFA), łączącego hasło z kodem z tokena lub aplikacji",
+        "inline_explanation": "(Prawda. To zalecany standard bezpieczeństwa dla kont root i administratorów)",
+        "correct": true
+      },
+      {
+        "text": "Poprzez weryfikację adresu MAC karty sieciowej użytkownika bez podawania hasła",
+        "inline_explanation": "(Fałsz. Adres MAC łatwo sfałszować i nie jest on przesyłany przez Internet poza lokalny router, więc chmura go nie widzi)",
         "correct": false
       },
       {
-        "text": "Przekierowaniu portu 389 (LDAP) bezpośrednio do Internetu",
-        "inline_explanation": "(bardzo niebezpieczna praktyka, naraża AD na ataki)",
-        "correct": false
-      },
-      {
-        "text": "Współdzieleniu jednego konta root przez wszystkich pracowników",
-        "inline_explanation": "(karygodny błąd bezpieczeństwa)",
+        "text": "Tylko i wyłącznie z poziomu fizycznej konsoli w serwerowni dostawcy",
+        "inline_explanation": "(Fałsz. Ideą chmury jest dostęp zdalny przez Internet z dowolnego miejsca)",
         "correct": false
       }
     ],
-    "explanation": "Federacja tożsamości to standard w dużych firmach. \n  \n Zamiast tworzyć osobne konta w chmurze, łączymy chmurę (Service Provider) z naszym lokalnym katalogiem (Identity Provider). Użytkownik loguje się raz w firmie i ma dostęp do AWS/Azure/Google."
+    "explanation": "Uwierzytelnianie w chmurze jest bardzo elastyczne. Możemy wyróżnić:\n1. **Ludzi:** Logują się przez Console (GUI) używając Hasła + MFA lub przez SSO (Federację).\n2. **Maszyny/Skrypty:** Logują się przez API używając Access Key ID + Secret Access Key.\n\nTwierdzenie, że istnieje 'wyłącznie' jedna metoda, jest fałszywe."
   },
   {
     "id": 138,
-    "question": "W celu zapewnienia bezpiecznego, prywatnego i gwarantowanego połączenia między siecią firmową (On-Premise) a chmurą publiczną, z pominięciem publicznego Internetu, stosuje się:",
+    "question": "Zaznacz zdania prawdziwe w kontekście zapewniania dostępu do chmury publicznej:",
     "options": [
       {
-        "text": "Zwykły tunel VPN Site-to-Site",
-        "inline_explanation": "(działa przez publiczny Internet, więc nie gwarantuje przepustowości)",
-        "correct": false
-      },
-      {
-        "text": "Dedykowane łącza prywatne (np. AWS Direct Connect, Azure ExpressRoute)",
-        "inline_explanation": "(fizyczny światłowód wpinany bezpośrednio do routerów dostawcy chmury)",
+        "text": "Istnieje możliwość zestawienia wielu połączeń VPN z różnych lokalizacji użytkownika (on-prem) do jednej wirtualnej sieci prywatnej",
+        "inline_explanation": "(Prawda. Bramy VPN w chmurze obsługują wiele tuneli jednocześnie, co pozwala połączyć np. centralę i oddziały terenowe z jedną siecią VPC)",
         "correct": true
       },
       {
-        "text": "Publiczne adresy IP z otwartymi portami RDP/SSH",
-        "inline_explanation": "(bardzo niebezpieczne i nie zapewnia prywatności transmisji)",
+        "text": "Jedyną metodą dostępu do zasobów prywatnych w chmurze jest przypisanie im publicznych adresów IP",
+        "inline_explanation": "(Fałsz. To zła praktyka. Do zasobów prywatnych dostajemy się bezpiecznie właśnie przez VPN lub dedykowane łącza)",
         "correct": false
       },
       {
-        "text": "Sieć Tor",
-        "inline_explanation": "(zapewnia anonimowość, ale jest wolna i nieprzewidywalna)",
+        "text": "Klient ma możliwość fizycznego podłączenia własnych światłowodów bezpośrednio do szaf serwerowych w centrum danych dostawcy chmury",
+        "inline_explanation": "(Fałsz. Ze względów bezpieczeństwa klienci nie mają wstępu do serwerowni. Fizyczne łącza realizuje się przez partnerów w lokalizacjach pośrednich - colocation)",
         "correct": false
       },
       {
-        "text": "Protokół FTP",
-        "inline_explanation": "(służy do przesyłania plików, nie jest metodą łączenia sieci)",
+        "text": "Połączenia VPN wykorzystują publiczny Internet jako medium transmisyjne, ale szyfrują przesyłane dane",
+        "inline_explanation": "(Prawda. To główna cecha VPN – tworzenie bezpiecznego tunelu wewnątrz niezaufanej sieci publicznej)",
+        "correct": true
+      },
+      {
+        "text": "Użycie dedykowanego łącza prywatnego (np. AWS Direct Connect, Azure ExpressRoute) wyklucza możliwość korzystania z VPN jako łącza zapasowego",
+        "inline_explanation": "(Fałsz. Standardem w architekturze korporacyjnej jest posiadanie szybkiego łącza dedykowanego i zapasowego tunelu VPN na wypadek awarii światłowodu)",
         "correct": false
       }
     ],
-    "explanation": "Dla małych firm VPN przez Internet wystarczy. Dla korporacji przesyłających terabajty danych, publiczny Internet jest zbyt wolny i niestabilny. Rozwiązaniem są dedykowane łącza (Direct Connect), które omijają Internet, zapewniając stałą przepustowość i mniejsze opóźnienia."
+    "explanation": "Dostęp do chmury (Connectivity) można realizować na 3 główne sposoby:\n1. **Publiczny Internet:** Najmniej bezpieczne, chyba że szyfrowane (HTTPS/SSH).\n2. **VPN (Site-to-Site):** Tunel szyfrowany przez Internet. Możesz podłączyć wiele biur do jednej sieci w chmurze (tzw. topologia Hub-and-Spoke).\n3. **Dedykowane łącze (Direct Connect/ExpressRoute):** Fizyczny kabel omijający publiczny Internet. Najbezpieczniejsze i najstabilniejsze."
   },
   {
     "id": 139,
-    "question": "Atak typu Blind SQL Injection (Time-based) polega na:",
+    "question": "Które z poniższych stwierdzeń dotyczą ataków typu \"Blind\"?",
     "options": [
       {
-        "text": "Odczytaniu danych bezpośrednio z komunikatu błędu na stronie",
-        "inline_explanation": "(to klasyczny Error-based SQLi)",
-        "correct": false
-      },
-      {
-        "text": "Wnioskowaniu o poprawności danych na podstawie czasu odpowiedzi serwera",
-        "inline_explanation": "(atakujący wstrzykuje instrukcję `SLEEP(5)` i mierzy, czy strona ładuje się dłużej)",
+        "text": "Ataki te polegają na wykorzystaniu mechanizmu \"out-of-band\" do przesyłania danych za pośrednictwem innego kanału",
+        "inline_explanation": "(Prawda. Skoro aplikacja nie wyświetla danych na ekranie, atakujący zmusza ją do wysłania ich np. w zapytaniu DNS do serwera, który kontroluje)",
         "correct": true
       },
       {
-        "text": "Podmianie treści strony głównej (Defacement)",
-        "inline_explanation": "(to skutek ataku, a nie mechanizm Blind SQLi)",
+        "text": "Atakujący otrzymuje pełne komunikaty błędów bazy danych bezpośrednio w odpowiedzi HTTP",
+        "inline_explanation": "(Fałsz. Jeśli widać komunikaty błędów, jest to atak typu 'Error-based', a nie 'Blind')",
         "correct": false
       },
       {
-        "text": "Przechwyceniu ciasteczek sesyjnych innych użytkowników",
-        "inline_explanation": "(to domena XSS)",
+        "text": "Wymagają one wnioskowania o danych na podstawie zachowania aplikacji, np. czasu odpowiedzi serwera",
+        "inline_explanation": "(Prawda. To tzw. Time-based Blind Injection - np. 'jeśli pierwsza litera hasła to A, odczekaj 10 sekund')",
+        "correct": true
+      },
+      {
+        "text": "Są niemożliwe do przeprowadzenia, jeśli aplikacja nie zwraca żadnych danych do przeglądarki",
+        "inline_explanation": "(Fałsz. Właśnie do takich sytuacji stworzono techniki Blind)",
         "correct": false
       },
       {
-        "text": "Zgadnięciu hasła administratora metodą słownikową",
-        "inline_explanation": "(to Brute Force)",
+        "text": "Dotyczą wyłącznie ataków socjotechnicznych na osoby niedowidzące",
+        "inline_explanation": "(Fałsz. Nazwa 'Blind' odnosi się do braku widocznej odpowiedzi systemu, a nie do wzroku użytkownika)",
         "correct": false
       }
     ],
-    "explanation": "W atakach \"Blind\" aplikacja nie zwraca żadnych danych ani błędów. Jest \"ślepa\". \n  \n Haker zadaje pytania w stylu: \"Jeśli pierwsza litera hasła to 'A', to czekaj 5 sekund\". Jeśli serwer \"zamyśli się\" na 5 sekund, haker wie, że trafił."
+    "explanation": "Ataki **Blind (Ślepe)** stosuje się, gdy aplikacja jest zabezpieczona przed wyświetlaniem błędów, ale nadal wykonuje złośliwy kod.\n\nSkoro haker nie widzi wyniku `SELECT password FROM users`, ma dwie drogi:\n1. **Zadawanie pytań T/N:** \"Czy pierwsza litera to A?\" -> Jeśli tak, strona ładuje się wolniej (Time-based).\n2. **Out-of-Band (OOB):** \"Jeśli pierwsza litera to A, wyślij ping do mojego serwera\". Wymuszona odpowiedź dotyczy tej drugiej metody."
   },
   {
     "id": 140,
-    "question": "Najskuteczniejszą metodą zapobiegania atakom SQL Injection po stronie kodu aplikacji jest:",
+    "question": "Jakie są główne sposoby zabezpieczania przed atakami SQL injection?",
     "options": [
       {
-        "text": "Szyfrowanie całej bazy danych",
-        "inline_explanation": "(nie chroni przed wykonaniem wstrzykniętego polecenia, np. DROP TABLE)",
+        "text": "Zastosowanie mechanizmów szyfrowania danych w bazie danych.",
+        "inline_explanation": "(Fałsz. Szyfrowanie chroni dane spoczynkowe, ale nie zapobiega wstrzyknięciu złośliwego polecenia. Jeśli aplikacja ma uprawnienia do odszyfrowania danych, haker też je odczyta)",
         "correct": false
       },
       {
-        "text": "Stosowanie zapytań parametryzowanych (Prepared Statements)",
-        "inline_explanation": "(silnik bazy oddziela kod SQL od danych; dane są traktowane zawsze jako tekst, nigdy jako komenda)",
+        "text": "Stosowanie zapytań parametryzowanych (Prepared Statements) w kodzie aplikacji",
+        "inline_explanation": "(Prawda. To najskuteczniejsza metoda. Oddziela ona treść zapytania SQL od danych wprowadzonych przez użytkownika, traktując te drugie zawsze jako zwykły tekst, a nie kod)",
         "correct": true
       },
       {
-        "text": "Ukrywanie błędów PHP przed użytkownikiem",
-        "inline_explanation": "(to utrudnia atak, ale go nie blokuje - patrz Blind SQLi)",
+        "text": "Walidacja i sanityzacja danych wejściowych (Input Validation)",
+        "inline_explanation": "(Prawda. Sprawdzanie, czy w polu 'wiek' jest liczba, a nie skrypt, to ważna linia obrony 'Defense in Depth')",
+        "correct": true
+      },
+      {
+        "text": "Ukrywanie komunikatów błędów bazy danych przed użytkownikiem",
+        "inline_explanation": "(Fałsz. To tylko utrudnia atak (zapobiega Error-based SQLi), ale nie łata samej dziury. Hakerzy mogą nadal użyć metody Blind SQLi)",
         "correct": false
       },
       {
-        "text": "Blokowanie znaków specjalnych (np. apostrofów) za pomocą wyrażeń regularnych",
-        "inline_explanation": "(trudne do idealnego zrobienia, łatwe do obejścia; tzw. czarna lista to słaba ochrona)",
-        "correct": false
-      },
-      {
-        "text": "Zmiana nazwy tabeli z 'users' na trudną do zgadnięcia",
-        "inline_explanation": "(Security by Obscurity - nie działa, bo nazwy tabel można wyciągnąć z metadanych bazy)",
+        "text": "Instalacja certyfikatu SSL/TLS na serwerze WWW",
+        "inline_explanation": "(Fałsz. Szyfrowanie transmisji (HTTPS) chroni przed podsłuchem, ale złośliwy kod SQL dotrze do bazy danych w bezpiecznym, zaszyfrowanym tunelu)",
         "correct": false
       }
     ],
-    "explanation": "Przykład w PHP (PDO): \n ❌ ŹLE: `$sql = \"SELECT * FROM users WHERE name = '\" . $name . \"'\";` \n ✅ DOBRZE: `$stmt = $pdo->prepare(\"SELECT * FROM users WHERE name = :name\"); $stmt->execute(['name' => $name]);` \n W wersji dobrej, nawet jak `$name` to `' OR '1'='1`, baza poszuka użytkownika o tak dziwnym imieniu, zamiast wykonać atak."
+    "explanation": "Atak SQL Injection polega na tym, że haker wpisuje fragment kodu (np. `' OR '1'='1`) w pole formularza, a baza danych wykonuje to jako rozkaz.\n\nJedynym skutecznym sposobem obrony jest **Parametryzacja (Prepared Statements)**. Działa to jak poinformowanie bazy danych: \"Oto szablon zapytania, a to co wpisał użytkownik to tylko głupi tekst, nie próbuj tego wykonywać\"."
   },
   {
     "id": 141,
-    "question": "Tzw. \"Zombie Cookie\" (lub Evercookie) to mechanizm śledzący, który:",
+    "question": "Ciasteczko, które potrafi odtworzyć się po usunięciu, to:",
     "options": [
       {
-        "text": "Jest zwykłym ciasteczkiem sesyjnym",
-        "inline_explanation": "(nie, sesyjne znikają po zamknięciu przeglądarki)",
+        "text": "Persistent Cookie",
+        "inline_explanation": "(Fałsz. To standardowe 'ciasteczko trwałe'. Przeżywa zamknięcie przeglądarki, ale znika bezpowrotnie, gdy użytkownik ręcznie wyczyści historię)",
         "correct": false
       },
       {
-        "text": "Potrafi odtworzyć się po usunięciu standardowych ciasteczek przez użytkownika",
-        "inline_explanation": "(ukrywa swoje kopie w różnych magazynach przeglądarki: LocalStorage, Flash, ETag, IndexedDB)",
+        "text": "Zombie Cookie",
+        "inline_explanation": "(Prawda. Wykorzystuje ukryte mechanizmy - np. Flash LSO, HTML5 Storage, ETag - aby automatycznie odtworzyć się po usunięciu standardowego pliku cookie)",
         "correct": true
       },
       {
-        "text": "Służy do poprawy bezpieczeństwa logowania w bankowości",
-        "inline_explanation": "(nie, jest uznawany za naruszenie prywatności i malware)",
+        "text": "Session Cookie",
+        "inline_explanation": "(Fałsz. To najmniej trwały typ - jest usuwane natychmiast po zamknięciu karty lub przeglądarki)",
         "correct": false
       },
       {
-        "text": "Jest wysyłany tylko przez połączenia HTTPS",
-        "inline_explanation": "(to Secure Cookie)",
+        "text": "Secure Cookie",
+        "inline_explanation": "(Fałsz. Flaga 'Secure' oznacza tylko tyle, że ciasteczko jest przesyłane wyłącznie przez szyfrowane połączenie HTTPS)",
         "correct": false
       },
       {
-        "text": "Wygasa automatycznie po 30 minutach",
-        "inline_explanation": "(celem Zombie Cookie jest przetrwanie latami)",
+        "text": "HttpOnly Cookie",
+        "inline_explanation": "(Fałsz. Ta flaga zapobiega dostępowi do ciasteczka przez JavaScript (ochrona przed XSS), ale nie chroni przed usunięciem)",
         "correct": false
       }
     ],
-    "explanation": "Zombie Cookie to uporczywy element śledzący. Działa jak wirus: jeśli usuniesz plik cookies, skrypt na stronie sprawdzi, czy dane są w LocalStorage lub cache'u obrazka (ETag). Jeśli znajdzie kopię, natychmiast odtwarza usunięte ciasteczko, \"ożywiając\" je jak zombie."
+    "explanation": "Istnieje różnica między ciasteczkiem, które 'długo żyje', a takim, które 'zmartwychwstaje':\n\n1. **Persistent Cookie:** Ma datę ważności w przyszłości (np. rok). Pamięta Cię po restarcie komputera. Ale jeśli je usuniesz - koniec.\n2. **Zombie Cookie:** To agresywna technika śledząca. Ukrywa kopię zapasową danych w innym miejscu (np. w pamięci podręcznej przeglądarki). Gdy usuniesz normalne ciasteczko, skrypt na stronie zauważa brak i odtwarza je z kopii zapasowej."
+  },
+  {
+    "id": 142,
+    "question": "Co może zrobić użytkownik, by realnie uchronić się od podatności CSRF?",
+    "options": [
+      {
+        "text": "korzystać tylko ze stron używających protokołu HTTPS",
+        "inline_explanation": "(Fałsz. HTTPS chroni przed podsłuchem, ale nie przed atakiem CSRF. Można bezpiecznie wysłać sfałszowane żądanie przez szyfrowany kanał)",
+        "correct": false
+      },
+      {
+        "text": "wylogowywać się z ważnych serwisów (np. banku) po zakończeniu pracy i nie używać funkcji 'zapamiętaj mnie'",
+        "inline_explanation": "(Prawda. CSRF wymaga aktywnej sesji zalogowanego użytkownika. Brak sesji = brak ataku)",
+        "correct": true
+      },
+      {
+        "text": "używać innej przeglądarki do bankowości, a innej do przeglądania stron rozrywkowych",
+        "inline_explanation": "(Prawda. Izolacja sesji w różnych przeglądarkach uniemożliwia przesłanie złośliwego żądania między nimi)",
+        "correct": true
+      },
+      {
+        "text": "regularnie zmieniać hasła do kont",
+        "inline_explanation": "(Fałsz. To dobra praktyka, ale nie chroni przed CSRF, który wykorzystuje bieżącą, aktywną sesję, a nie znajomość hasła)",
+        "correct": false
+      },
+      {
+        "text": "wyłączyć obsługę JavaScript w przeglądarce",
+        "inline_explanation": "(Fałsz. Choć utrudnia to atak, CSRF można wykonać prostym formularzem HTML lub obrazkiem, bez użycia JS)",
+        "correct": false
+      }
+    ],
+    "explanation": "CSRF (Cross-Site Request Forgery) polega na tym, że atakujący zmusza Twoją przeglądarkę do wykonania akcji w serwisie, w którym jesteś aktualnie zalogowany (np. \"Przelej 100 zł\").\n\nJako użytkownik masz małe pole manewru (to serwer powinien się bronić tokenami Anti-CSRF). Jedyne co możesz zrobić, to **nie klikać w podejrzane linki** i **wylogowywać się** z ważnych stron."
+  },
+  {
+    "id": 143,
+    "question": "Czym jest Code Injection?",
+    "options": [
+      {
+        "text": "Procesem wykorzystywanym do optymalizacji wydajności programu poprzez ograniczenie zbędnego kodu",
+        "inline_explanation": "(Fałsz. To brzmi jak 'Refaktoryzacja' lub 'Minifikacja'. Code Injection to groźny atak)",
+        "correct": false
+      },
+      {
+        "text": "Techniką ataku polegającą na wprowadzeniu złośliwego kodu, który jest następnie wykonywany przez aplikację",
+        "inline_explanation": "(Prawda. Atakujący wykorzystuje luki w walidacji danych, aby wstrzyknąć np. kod PHP, Python lub Shell, przejmując kontrolę nad serwerem)",
+        "correct": true
+      },
+      {
+        "text": "Metodą automatycznego generowania kodu źródłowego przez narzędzia AI",
+        "inline_explanation": "(Fałsz. To 'Code Generation', a nie Injection)",
+        "correct": false
+      },
+      {
+        "text": "Wstrzyknięciem stylów CSS w celu zmiany wyglądu strony",
+        "inline_explanation": "(Fałsz. To byłby atak typu CSS Injection lub Defacement, Code Injection zazwyczaj odnosi się do kodu wykonywalnego po stronie serwera)",
+        "correct": false
+      },
+      {
+        "text": "Legalną techniką stosowaną przez programistów do aktualizacji oprogramowania bez restartu (Hot patching)",
+        "inline_explanation": "(Fałsz. Choć technicznie podobne, w kontekście bezpieczeństwa termin ten oznacza atak)",
+        "correct": false
+      }
+    ],
+    "explanation": "Code Injection występuje, gdy aplikacja bierze dane od użytkownika i bez sprawdzenia wykonuje je jako kod programu (np. używając funkcji `eval()`).\n\nPrzykład: Aplikacja ma kalkulator. Użytkownik zamiast `2+2` wpisuje `system('usuń_wszystkie_pliki')`. Jeśli aplikacja to wykona - to jest Code Injection."
+  },
+  {
+    "id": 144,
+    "question": "Jak (jako administrator) zabezpieczyć się przed atakami z użyciem ciasteczek?",
+    "options": [
+      {
+        "text": "Szyfrować wartości ciasteczek",
+        "inline_explanation": "(Prawda. Dzięki temu, nawet jeśli użytkownik edytuje plik cookie na swoim komputerze, serwer odrzuci zmodyfikowaną wartość lub jej nie odczyta)",
+        "correct": true
+      },
+      {
+        "text": "Ustawić flagę HttpOnly",
+        "inline_explanation": "(Prawda. Zapobiega to kradzieży ciasteczka przez skrypty JavaScript (ochrona przed XSS))",
+        "correct": true
+      },
+      {
+        "text": "Ustawić flagę Secure",
+        "inline_explanation": "(Prawda. Wymusza przesyłanie ciasteczka wyłącznie szyfrowanym kanałem HTTPS)",
+        "correct": true
+      },
+      {
+        "text": "Zapisywać hasła użytkowników w ciasteczkach jawnym tekstem",
+        "inline_explanation": "(Fałsz. To kardynalny błąd bezpieczeństwa)",
+        "correct": false
+      },
+      {
+        "text": "Ustawić flagę SameSite (Strict lub Lax)",
+        "inline_explanation": "(Prawda. Ogranicza wysyłanie ciasteczek w żądaniach między różnymi stronami, chroniąc przed CSRF)",
+        "correct": true
+      }
+    ],
+    "explanation": "Ciasteczka są wektorem wielu ataków (XSS, CSRF, Session Hijacking).\n\nOchrona wymaga wielu warstw:\n1. **HttpOnly:** \"Nie dawaj JS dostępu do ciastek\".\n2. **Secure:** \"Wysyłaj tylko po HTTPS\".\n3. **SameSite:** \"Nie wysyłaj, gdy link pochodzi z innej strony\".\n4. **Szyfrowanie/Podpis:** \"Zabezpiecz treść przed podglądem i zmianą\"."
+  },
+  {
+    "id": 145,
+    "question": "WAF (Web Application Firewall) sprawdza:",
+    "options": [
+      {
+        "text": "tylko ruch wysyłany z serwera do użytkownika",
+        "inline_explanation": "(Fałsz. To byłoby bez sensu - WAF musi przede wszystkim badać zapytania wchodzące do serwera (GET/POST), aby zablokować SQL Injection czy XSS, zanim dotrą do aplikacji)",
+        "correct": false
+      },
+      {
+        "text": "ruch w warstwie aplikacji (HTTP/HTTPS), analizując treść zapytań i odpowiedzi",
+        "inline_explanation": "(Prawda. WAF działa w 7. warstwie modelu OSI i 'rozumie' co jest w środku pakietu, w przeciwieństwie do zwykłego firewalla sieciowego)",
+        "correct": true
+      },
+      {
+        "text": "poprawność sum kontrolnych ramek Ethernet",
+        "inline_explanation": "(Fałsz. To zadanie dla karty sieciowej lub switcha w warstwie 2, a nie dla WAF)",
+        "correct": false
+      },
+      {
+        "text": "tylko nagłówki pakietów IP (adres źródłowy i docelowy)",
+        "inline_explanation": "(Fałsz. To definicja klasycznego Firewalla stanowego (Packet Filtering), WAF zagląda głębiej - w payload)",
+        "correct": false
+      },
+      {
+        "text": "czy użytkownik posiada zainstalowany program antywirusowy",
+        "inline_explanation": "(Fałsz. WAF chroni serwer, nie ma wglądu w to, co jest zainstalowane na komputerze klienta)",
+        "correct": false
+      }
+    ],
+    "explanation": "WAF to 'ochroniarz', który stoi przed aplikacją WWW.\n\nZwykły Firewall mówi: \"Wpuszczam ruch na porcie 80\".\nWAF mówi: \"Wpuszczam ruch na porcie 80, ALE sprawdzam, czy w formularzu logowania ktoś nie wpisał kodu SQL\". Analizuje on ruch w obie strony, ale kluczowa jest blokada złośliwych żądań (Request)."
+  },
+  {
+    "id": 146,
+    "question": "Metodami ochrony przed atakami typu XSS są:",
+    "options": [
+      {
+        "text": "ograniczenia w zakresie publikacji plików oraz linków",
+        "inline_explanation": "(Prawda. Zabronienie użytkownikom wgrywania plików HTML/SVG lub wklejania linków 'javascript:' ogranicza wektory ataku)",
+        "correct": true
+      },
+      {
+        "text": "kodowanie (encoding) danych wyjściowych odpowiednio do kontekstu (HTML, JS, CSS)",
+        "inline_explanation": "(Prawda. Zamiana znaków specjalnych jak `<` na `&lt;` sprawia, że przeglądarka wyświetli je jako tekst, a nie wykona jako kod)",
+        "correct": true
+      },
+      {
+        "text": "stosowanie nagłówka Content Security Policy (CSP)",
+        "inline_explanation": "(Prawda. CSP to instrukcja dla przeglądarki, z jakich źródeł wolno ładować skrypty. Blokuje to nieautoryzowany kod)",
+        "correct": true
+      },
+      {
+        "text": "wyłącznie stosowanie protokołu HTTPS",
+        "inline_explanation": "(Fałsz. Szyfrowanie transmisji nie chroni przed złośliwym skryptem, który jest poprawnie przesłany bezpiecznym tunelem)",
+        "correct": false
+      },
+      {
+        "text": "ukrywanie kodu źródłowego strony poprzez blokadę prawego przycisku myszy",
+        "inline_explanation": "(Fałsz. Security by Obscurity nie działa; kod źródłowy zawsze można podejrzeć w narzędziach deweloperskich)",
+        "correct": false
+      }
+    ],
+    "explanation": "XSS (Cross-Site Scripting) polega na wstrzyknięciu złośliwego JavaScriptu.\n\nObrona jest wielowarstwowa:\n1. **Input Validation:** Nie pozwalaj wpisywać `<script>`.\n2. **Output Encoding:** Jeśli ktoś wpisał `<script>`, wyświetl to jako bezpieczny tekst.\n3. **CSP:** Nawet jak skrypt przejdzie, przeglądarka go nie uruchomi, bo nie jest na białej liście."
+  },
+  {
+    "id": 147,
+    "question": "Podatności z zakresu Identification and Authentication Failures:",
+    "options": [
+      {
+        "text": "mogą być eliminowane poprzez nałożenia na użytkownika wymagań oraz ograniczeń",
+        "inline_explanation": "(Prawda. Chodzi o wymuszenie polityki haseł - np. min. 12 znaków, brak słownikowych słów - oraz blokadę konta po X nieudanych próbach)",
+        "correct": true
+      },
+      {
+        "text": "dotyczą wyłącznie błędów w kodzie SQL bazy danych",
+        "inline_explanation": "(Fałsz. To byłoby SQL Injection. Tutaj chodzi o proces logowania i zarządzania sesją)",
+        "correct": false
+      },
+      {
+        "text": "są niwelowane poprzez wdrożenie uwierzytelniania wieloskładnikowego (MFA)",
+        "inline_explanation": "(Prawda. MFA to najskuteczniejsza metoda obrony przed słabymi lub skradzionymi hasłami)",
+        "correct": true
+      },
+      {
+        "text": "wymagają stosowania domyślnych haseł producenta dla łatwiejszej konfiguracji",
+        "inline_explanation": "(Fałsz. Pozostawienie domyślnych haseł to jedna z głównych przyczyn tych podatności!)",
+        "correct": false
+      },
+      {
+        "text": "polegają na przesyłaniu identyfikatora sesji w adresie URL (Session ID exposure)",
+        "inline_explanation": "(Prawda. To klasyczny błąd w tej kategorii - identyfikator sesji powinien być w ciasteczku, a nie w pasku adresu, skąd łatwo wycieka)",
+        "correct": true
+      }
+    ],
+    "explanation": "Kategoria \"Identification and Authentication Failures\" (dawniej Broken Authentication) obejmuje wszystko, co pozwala hakerowi podszyć się pod użytkownika.\n\nNaprawiamy to poprzez:\n1. **Wymagania:** Silne hasła, rotacja, brak haseł domyślnych.\n2. **Ograniczenia:** Blokada po 3 błędnych próbach (ochrona przed Brute Force).\n3. **MFA:** Dodatkowy składnik logowania."
   }
-
 ]
 
